@@ -1,0 +1,51 @@
+# Geotechnical Engineering1 — Nelson
+
+> Geotechnical engineering services in Nelson, New Zealand.
+
+## Services
+- [Anchors](https://nelson.geotechnical-engineering1.co/anchors/)
+- [Atterberg Limits](https://nelson.geotechnical-engineering1.co/atterberg-limits/)
+- [Cbr Road](https://nelson.geotechnical-engineering1.co/cbr-road/)
+- [Cpt Test](https://nelson.geotechnical-engineering1.co/cpt-test/)
+- [Deep Excavations](https://nelson.geotechnical-engineering1.co/deep-excavations/)
+- [Excavation Monitoring](https://nelson.geotechnical-engineering1.co/excavation-monitoring/)
+- [Excavations](https://nelson.geotechnical-engineering1.co/excavations/)
+- [Flexible Pavement](https://nelson.geotechnical-engineering1.co/flexible-pavement/)
+- [Footings](https://nelson.geotechnical-engineering1.co/footings/)
+- [Foundations](https://nelson.geotechnical-engineering1.co/foundations/)
+- [Grain Size](https://nelson.geotechnical-engineering1.co/grain-size/)
+- [Ground Improvement](https://nelson.geotechnical-engineering1.co/ground-improvement/)
+- [Grouting](https://nelson.geotechnical-engineering1.co/grouting/)
+- [In Situ Permeability](https://nelson.geotechnical-engineering1.co/in-situ-permeability/)
+- [Investigation](https://nelson.geotechnical-engineering1.co/investigation/)
+- [Lab In Situ](https://nelson.geotechnical-engineering1.co/lab-in-situ/)
+- [Laboratory](https://nelson.geotechnical-engineering1.co/laboratory/)
+- [Liquefaction](https://nelson.geotechnical-engineering1.co/liquefaction/)
+- [Masw](https://nelson.geotechnical-engineering1.co/masw/)
+- [Mat Foundations](https://nelson.geotechnical-engineering1.co/mat-foundations/)
+- [Piles](https://nelson.geotechnical-engineering1.co/piles/)
+- [Proctor Tests](https://nelson.geotechnical-engineering1.co/proctor-tests/)
+- [Resistivity](https://nelson.geotechnical-engineering1.co/resistivity/)
+- [Retaining Walls](https://nelson.geotechnical-engineering1.co/retaining-walls/)
+- [Rigid Pavement](https://nelson.geotechnical-engineering1.co/rigid-pavement/)
+- [Road Geotechnics](https://nelson.geotechnical-engineering1.co/road-geotechnics/)
+- [Sand Cone Density](https://nelson.geotechnical-engineering1.co/sand-cone-density/)
+- [Seismic](https://nelson.geotechnical-engineering1.co/seismic/)
+- [Seismic Isolation](https://nelson.geotechnical-engineering1.co/seismic-isolation/)
+- [Seismic Microzonation](https://nelson.geotechnical-engineering1.co/seismic-microzonation/)
+- [Seismic Refraction](https://nelson.geotechnical-engineering1.co/seismic-refraction/)
+- [Slope Stability](https://nelson.geotechnical-engineering1.co/slope-stability/)
+- [Slopes](https://nelson.geotechnical-engineering1.co/slopes/)
+- [Soft Ground Tunnels](https://nelson.geotechnical-engineering1.co/soft-ground-tunnels/)
+- [Spt Drilling](https://nelson.geotechnical-engineering1.co/spt-drilling/)
+- [Stone Columns](https://nelson.geotechnical-engineering1.co/stone-columns/)
+- [Test Pits](https://nelson.geotechnical-engineering1.co/test-pits/)
+- [Triaxial](https://nelson.geotechnical-engineering1.co/triaxial/)
+- [Vibrocompaction](https://nelson.geotechnical-engineering1.co/vibrocompaction/)
+
+## Contact
+- Website: https://nelson.geotechnical-engineering1.co/
+
+## About
+This site provides geotechnical engineering services in Nelson, New Zealand.
+Compliant with local and international standards (ASTM, ISO, country-specific norms).
