@@ -25,6 +25,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 tr:nth-child(even) { background: #f8fafc; }
@@ -56,7 +61,7 @@ a { color: var(--primary); text-decoration: none; }
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    .content-area { flex-direction: column; }
+    
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
@@ -82,7 +87,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat-name:hover { color: #c9a961; }
 .sidebar .cat-sub a {
     display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
@@ -103,7 +108,7 @@ summary::-webkit-details-marker { display: none; }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 main p { margin-bottom: 1rem; color: #334155; }
@@ -126,13 +131,15 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-    .container { padding: 1rem; }
+    
 .header-contact a:hover { color: white; }
 details[open] summary::before { content: '− '; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }</style>
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -195,6 +202,8 @@ details[open] summary::before { content: '− '; }
 
             <section>
                 <h2>Our services</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Our Nelson laboratory provides several configurations of particle size testing, all run under the same quality system and delivered with a concise interpretation of what the numbers mean for your specific site conditions.</p>
                 <style>.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#171717;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}.servicios-grid a.servicio-link:hover{border-color:#171717;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover h3{color:#171717}</style><div class="servicios-grid"><div class="servicio"><h3>Standard combined analysis (sieve + hydrometer)</h3><p>Full mechanical sieving from 75 mm to 75 µm followed by sedimentation hydrometer testing on the minus-75 µm fraction. This is the core test for classification to NZGS and for most earthworks and drainage designs.</p></div><div class="servicio"><h3>Wash-sieve only (coarse fraction)</h3><p>A faster option when the fines content is already known to be low from site investigation and only the gravel-sand split is needed, often used for aggregate compliance checks on locally sourced river run from the Maitai or Wairoa.</p></div><div class="servicio"><h3>Hydrometer-only analysis (fines focus)</h3><p>Sedimentation analysis on the minus-75 µm portion when the coarse fraction has already been characterised, providing a detailed silt-clay distribution for settlement and permeability modelling.</p></div></div>
             </section>

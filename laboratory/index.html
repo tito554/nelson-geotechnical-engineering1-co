@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 tr:nth-child(even) { background: #f8fafc; }
@@ -53,7 +58,7 @@ a { color: var(--primary); text-decoration: none; }
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    .content-area { flex-direction: column; }
+    
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
@@ -79,7 +84,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat-name:hover { color: #c9a961; }
 .sidebar .cat-sub a {
     display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
@@ -100,7 +105,7 @@ summary::-webkit-details-marker { display: none; }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 main p { margin-bottom: 1rem; color: #334155; }
@@ -123,13 +128,15 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-    .container { padding: 1rem; }
+    
 .header-contact a:hover { color: white; }
 details[open] summary::before { content: '− '; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }</style>
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://nelson.geotechnical-engineering1.co/laboratory/","description":"In Nelson, precise laboratory testing underpins reliable geotechnical design across the region’s variable terrain, from the weathered Port Hills gravels to","inLanguage":"en","@type":"WebPage","url":"https://nelson.geotechnical-engineering1.co/laboratory/","name":"Laboratory in Nelson – New Zealand","isPartOf":{"url":"https://nelson.geotechnical-engineering1.co","@id":"https://nelson.geotechnical-engineering1.co/#website","@type":"WebSite"}},{"@type":"BreadcrumbList","itemListElement":[{"name":"Home","position":1,"item":"https://nelson.geotechnical-engineering1.co/","@type":"ListItem"},{"name":"Laboratory","position":2,"item":"https://nelson.geotechnical-engineering1.co/laboratory/","@type":"ListItem"}]},{"@type":"ItemList","itemListElement":[{"url":"https://nelson.geotechnical-engineering1.co/atterberg-limits/","name":"Atterberg limits","position":1,"@type":"ListItem"},{"url":"https://nelson.geotechnical-engineering1.co/grain-size/","name":"Grain size analysis (sieve + hydrometer)","position":2,"@type":"ListItem"}],"name":"Laboratory"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -155,8 +162,8 @@ details[open] summary::before { content: '− '; }
             <nav><a href="index.html" class="home">Home</a><div class="cat-item" data-cat="investigation"><div class="cat-row"><a href="/investigation/" class="cat-name">Investigation</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Investigation"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/cpt-test/">CPT (Cone Penetration Test)</a></div></div><div class="cat-item" data-cat="lab-in-situ"><div class="cat-row"><a href="/lab-in-situ/" class="cat-name">In-Situ Testing</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir In-Situ Testing"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/sand-cone-density/">Field density test (sand cone method)</a></div></div><div class="cat-item" data-cat="laboratory"><div class="cat-row"><a href="/laboratory/" class="cat-name">Laboratory</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Laboratory"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/atterberg-limits/">Atterberg limits</a><a href="/grain-size/">Grain size analysis (sieve + hydrometer)</a></div></div><div class="cat-item" data-cat="foundations"><div class="cat-row"><a href="/foundations/" class="cat-name">Foundations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Foundations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/piles/">Pile foundation design</a></div></div><div class="cat-item" data-cat="slopes"><div class="cat-row"><a href="/slopes/" class="cat-name">Slopes & Walls</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Slopes & Walls"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/anchors/">Active/passive anchor design</a><a href="/retaining-walls/">Retaining wall design</a><a href="/slope-stability/">Slope stability analysis</a></div></div><div class="cat-item" data-cat="ground-improvement"><div class="cat-row"><a href="/ground-improvement/" class="cat-name">Ground improvement</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Ground improvement"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/stone-columns/">Stone column design</a><a href="/vibrocompaction/">Vibrocompaction design</a></div></div><div class="cat-item" data-cat="seismic"><div class="cat-row"><a href="/seismic/" class="cat-name">Seismic</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Seismic"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/seismic-isolation/">Base isolation seismic design</a><a href="/seismic-microzonation/">Seismic microzonation</a><a href="/liquefaction/">Soil liquefaction analysis</a></div></div><div class="cat-item" data-cat="road-geotechnics"><div class="cat-row"><a href="/road-geotechnics/" class="cat-name">Roadway</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Roadway"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/cbr-road/">CBR study for road design</a><a href="/flexible-pavement/">Flexible pavement design</a><a href="/rigid-pavement/">Rigid pavement design</a></div></div><div class="cat-item" data-cat="excavations"><div class="cat-row"><a href="/excavations/" class="cat-name">Underground Excavations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Underground Excavations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels</a><a href="/deep-excavations/">Geotechnical design of deep excavations</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring</a></div></div></nav>
         </aside>
         <main>
-            <section><p>In Nelson, precise laboratory testing underpins reliable geotechnical design across the region’s variable terrain, from the weathered Port Hills gravels to the soft alluvial soils of the Waimea Plains. Our laboratory category covers the full physical characterisation of soils in accordance with New Zealand Standard NZS 4402, focusing on classification and behavioural properties. Fundamental index testing, including <a href="atterberg-limits/">Atterberg limits</a>, defines the plastic range of fine-grained soils, while <a href="grain-size/">grain size analysis</a> by sieve and hydrometer quantifies the full particle distribution from coarse sands to clays, enabling accurate soil group assignment.</p>
-<p>These tests are essential for residential foundation assessments, rural subdivision earthworks, and commercial developments requiring NZS 3604 compliance or specific MBIE guidance. Accurate <a href="atterberg-limits/">Atterberg limits</a> data directly supports shrink-swell evaluation on Nelson’s clay-rich hillside sites, reducing structural risk. Simultaneously, the complete grading curve from our <a href="grain-size/">grain size analysis</a> informs drainage design, compaction control, and liquefaction screening for low-lying coastal projects, ensuring robust, code-compliant ground models.</p></section>
+            <section><p>In Nelson, precise laboratory testing underpins reliable geotechnical design across the region’s variable terrain, from the weathered Port Hills gravels to the soft alluvial soils of the Waimea Plains. Our laboratory category covers the full physical characterisation of soils in accordance with New Zealand Standard NZS 4402, focusing on classification and behavioural properties. Fundamental index testing, including <a href="/atterberg-limits/">Atterberg limits</a>, defines the plastic range of fine-grained soils, while <a href="/grain-size/">grain size analysis</a> by sieve and hydrometer quantifies the full particle distribution from coarse sands to clays, enabling accurate soil group assignment.</p>
+<p>These tests are essential for residential foundation assessments, rural subdivision earthworks, and commercial developments requiring NZS 3604 compliance or specific MBIE guidance. Accurate <a href="/atterberg-limits/">Atterberg limits</a> data directly supports shrink-swell evaluation on Nelson’s clay-rich hillside sites, reducing structural risk. Simultaneously, the complete grading curve from our <a href="/grain-size/">grain size analysis</a> informs drainage design, compaction control, and liquefaction screening for low-lying coastal projects, ensuring robust, code-compliant ground models.</p></section>
 
             <blockquote style="border-left:4px solid #171717;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">In Nelson's mixed colluvium and gravel, anchor performance hinges less on the steel grade and more on how the grout column interacts with the surrounding ground.</blockquote>
 
@@ -198,7 +205,14 @@ details[open] summary::before { content: '− '; }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../atterberg-limits/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Atterberg limits</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../grain-size/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Grain size analysis (sieve + hydrometer)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/granulometria-5.webp" alt="Laboratory in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Geotechnical laboratory testing in Nelson provides the quantitative backbone for site characterisation, converting field samples into reliable design parameters. The region’s geology—dominated by Moutere Gravels, Port Hills loess, and alluvial deposits along the Maitai and Waimea rivers—demands careful evaluation of strength, compressibility, and drainage characteristics. Our IANZ-accredited laboratory supports both routine and advanced testing programmes, ensuring compliance with NZGS guidelines and relevant New Zealand standards. This capability directly complements field <a href="/investigation/">geotechnical investigation</a> by verifying ground conditions encountered during drilling and sampling, while providing critical inputs for <a href="/foundations/">foundation design</a> tailored to Nelson’s variable substrates.</p>
+<p>Testing methodologies follow rigorous New Zealand protocols, primarily NZS 4402 for soil testing and NZS 3111 for concrete and aggregate evaluation. Index property tests—including <a href="/atterberg-limits/">Atterberg limits</a> determination and <a href="/grain-size/">grain size analysis</a> by sieve and hydrometer—establish fundamental soil classification to NZGS standards. Strength and consolidation testing, such as unconfined compressive strength, direct shear, and oedometer consolidation, addresses the performance of fine-grained soils common in Nelson’s hill slopes and estuarine margins. All procedures integrate with field measurements obtained through <a href="/cpt-test/">cone penetration testing</a> and <a href="/lab-in-situ/">in-situ testing</a>, enabling calibration of empirical correlations against site-specific laboratory results.</p>
+<p>Nelson’s typical projects span residential subdivisions on sloping terrain, commercial developments in the CBD, and infrastructure upgrades across the region. Laboratory programmes for hillside developments prioritise shrink-swell potential and shear strength of loess-derived soils, while riverside projects focus on liquefaction susceptibility and consolidation settlement of alluvial silts. For earthworks quality control, <a href="/sand-cone-density/">field density testing using the sand cone method</a> verifies compaction compliance, with laboratory moisture-density relationships establishing target values. Each project benefits from testing schedules aligned with the specific geological unit encountered, avoiding unnecessary testing while ensuring critical parameters are adequately characterised.</p>
+<img src="/img/ensayo-triaxial-4.webp" alt="Laboratory in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>The laboratory process begins with sample receipt and logging, proceeds through client-approved test schedules, and concludes with comprehensive factual reporting. Deliverables include test data sheets, NZGS soil classifications, and interpreted parameters ready for geotechnical design. Turnaround times accommodate construction programme requirements, with standard index testing completed within five working days. By combining local geological understanding with technically rigorous testing, we deliver defensible design parameters that reduce uncertainty and support efficient foundation solutions across the Nelson-Tasman region.</p></div></section></main>
     </div>
 </div>
 

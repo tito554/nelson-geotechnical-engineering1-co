@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 tr:nth-child(even) { background: #f8fafc; }
@@ -53,7 +58,7 @@ a { color: var(--primary); text-decoration: none; }
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    .content-area { flex-direction: column; }
+    
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
@@ -79,7 +84,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat-name:hover { color: #c9a961; }
 .sidebar .cat-sub a {
     display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
@@ -100,7 +105,7 @@ summary::-webkit-details-marker { display: none; }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 main p { margin-bottom: 1rem; color: #334155; }
@@ -123,13 +128,15 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-    .container { padding: 1rem; }
+    
 .header-contact a:hover { color: white; }
 details[open] summary::before { content: '− '; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }</style>
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://nelson.geotechnical-engineering1.co/lab-in-situ/","description":"In-situ testing in Nelson provides direct assessment of ground conditions without disturbing the natural soil fabric, essential for interpreting the region","inLanguage":"en","@type":"WebPage","url":"https://nelson.geotechnical-engineering1.co/lab-in-situ/","name":"In-Situ Testing in Nelson – New Zealand","isPartOf":{"url":"https://nelson.geotechnical-engineering1.co","@id":"https://nelson.geotechnical-engineering1.co/#website","@type":"WebSite"}},{"@type":"BreadcrumbList","itemListElement":[{"name":"Home","position":1,"item":"https://nelson.geotechnical-engineering1.co/","@type":"ListItem"},{"name":"In-Situ Testing","position":2,"item":"https://nelson.geotechnical-engineering1.co/lab-in-situ/","@type":"ListItem"}]},{"@type":"ItemList","itemListElement":[{"url":"https://nelson.geotechnical-engineering1.co/sand-cone-density/","name":"Field density test (sand cone method)","position":1,"@type":"ListItem"}],"name":"In-Situ Testing"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -198,7 +205,14 @@ details[open] summary::before { content: '− '; }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../sand-cone-density/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Field density test (sand cone method)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/ensayo-proctor-4.webp" alt="In-Situ Testing in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>In-situ testing in Nelson provides direct geotechnical data from the ground without the disturbance of sample removal, essential for understanding the complex local geology. The region features a dynamic landscape shaped by the Maitai and Brook Street terranes, overlain by Moutere Gravels and variable alluvial and estuarine deposits, including soft, compressible clays in low-lying areas. A robust site <a href="/investigation/">investigation</a> must account for these conditions, and testing is performed in accordance with the New Zealand Geotechnical Society guidelines and NZS 4402 series, ensuring data is reliable for design in a seismically active environment.</p>
+<p>The cornerstone of our methodology is the <a href="/cpt-test/">Cone Penetration Test (CPT)</a>, a rapid and continuous profiling technique standardized by NZGS Module 2. This method provides high-resolution data on soil stratification, relative density in sands, and undrained shear strength in the clays found across Nelson and Tasman. For near-surface compaction control on granular structural fill, we perform the <a href="/sand-cone-density/">field density test using the sand cone method</a>, strictly following NZS 4402.6.5.2. This is directly linked to moisture-conditioning requirements verified by <a href="/atterberg-limits/">Atterberg limits</a> testing in our laboratory, creating a closed loop between field performance and material properties.</p>
+<p>Typical projects in Nelson demand this integrated approach, from residential subdivisions on the variable slopes of Atawhai and The Brook to commercial developments on reclaimed land in the city center. For a foundation design on the Richmond alluvial plains, a CPT profile precisely locates the bearing stratum and identifies any interbedded soft layers that could lead to differential settlement. This data is critical for the design of robust <a href="/foundations/">foundations</a>, allowing engineers to select optimal pile lengths or confirm bearing capacity for shallow footings, directly addressing the risks posed by the local geology.</p>
+<img src="/img/densidad-cono-arena-5.webp" alt="In-Situ Testing in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>The process begins with a clear scope, followed by field execution where data is logged in real-time. The core value lies in the immediate, undisturbed data stream that reduces the need for extensive boreholes. Final deliverables provide interpreted geotechnical parameters, ready for direct input into design models, offering a complete picture of ground behavior. This is supported by our <a href="/laboratory/">laboratory</a> for classification tests like <a href="/grain-size/">grain size analysis by sieve and hydrometer</a>, which calibrate the in-situ results. The outcome is a defensible, high-quality data set that de-risks your Nelson project by providing certainty about the ground.</p></div></section></main>
     </div>
 </div>
 

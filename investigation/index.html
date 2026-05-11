@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 tr:nth-child(even) { background: #f8fafc; }
@@ -53,7 +58,7 @@ a { color: var(--primary); text-decoration: none; }
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    .content-area { flex-direction: column; }
+    
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
@@ -79,7 +84,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat-name:hover { color: #c9a961; }
 .sidebar .cat-sub a {
     display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
@@ -100,7 +105,7 @@ summary::-webkit-details-marker { display: none; }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 main p { margin-bottom: 1rem; color: #334155; }
@@ -123,13 +128,15 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-    .container { padding: 1rem; }
+    
 .header-contact a:hover { color: white; }
 details[open] summary::before { content: '− '; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }</style>
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://nelson.geotechnical-engineering1.co/investigation/","description":"Geotechnical investigation in Nelson addresses the variable ground conditions shaped by Moutere Gravels, Port Hills loess, and alluvial deposits of the Wai","inLanguage":"en","@type":"WebPage","url":"https://nelson.geotechnical-engineering1.co/investigation/","name":"Investigation in Nelson – New Zealand","isPartOf":{"url":"https://nelson.geotechnical-engineering1.co","@id":"https://nelson.geotechnical-engineering1.co/#website","@type":"WebSite"}},{"@type":"BreadcrumbList","itemListElement":[{"name":"Home","position":1,"item":"https://nelson.geotechnical-engineering1.co/","@type":"ListItem"},{"name":"Investigation","position":2,"item":"https://nelson.geotechnical-engineering1.co/investigation/","@type":"ListItem"}]},{"@type":"ItemList","itemListElement":[{"url":"https://nelson.geotechnical-engineering1.co/cpt-test/","name":"CPT (Cone Penetration Test)","position":1,"@type":"ListItem"}],"name":"Investigation"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -198,7 +205,14 @@ details[open] summary::before { content: '− '; }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../cpt-test/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">CPT (Cone Penetration Test)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/ensayo-triaxial-4.webp" alt="Investigation in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>In Nelson, a thorough geotechnical <a href="/investigation/">investigation</a> is the critical first step for any construction or land development project. The region’s complex geology—ranging from Moutere Gravels and Port Hills loess to coastal alluvium and variable fill materials—demands a rigorous understanding of subsurface conditions. A properly scoped investigation identifies potential hazards such as liquefiable soils, soft clays, or sloping ground instability, directly informing foundation design and earthworks strategies in accordance with the New Zealand Building Code, particularly B1/VM1 and the guidance of NZGS Module 1. Whether you are planning a residential dwelling on a hill section or a commercial structure on the flat, integrating field testing with targeted <a href="/laboratory/">laboratory</a> analysis is essential for regulatory compliance and long-term performance.</p>
+<p>Our investigation methodology follows the stepped approach outlined in NZGS guidelines and relevant New Zealand Standards, including NZS 4402 for soil testing. We typically begin with a desktop study and site walkover, followed by intrusive fieldwork using a combination of techniques. The <a href="/cpt-test/">Cone Penetration Test (CPT)</a> provides continuous profiling of soil behaviour, which is particularly effective for identifying interbedded sands and silts susceptible to liquefaction in the Nelson region. This is complemented by <a href="/lab-in-situ/">in-situ testing</a> such as Scala penetrometer testing in areas with limited access, and the <a href="/sand-cone-density/">sand cone density test</a> for verifying engineered fill compaction. All field data is calibrated against disturbed and undisturbed samples sent for laboratory analysis to create a robust geotechnical model.</p>
+<p>Typical projects in Nelson span from foundation assessments for new residential subdivisions in Stoke and Richmond to commercial developments in the CBD where deep alluvial deposits require careful evaluation of settlement and bearing capacity. We frequently support architects and structural engineers with detailed <a href="/foundations/">foundations</a> recommendations, tackling challenges like variable ground conditions on the hillside terraces of Atawhai or liquefaction assessments for medium-density housing on the flats. For rural and lifestyle blocks, investigations often focus on effluent disposal suitability and slope stability, ensuring compliance with the Tasman Resource Management Plan. Each investigation is tailored to the specific geomorphic setting, directly addressing the consenting requirements of the Nelson City Council.</p>
+<img src="/img/ensayo-triaxial-4.webp" alt="Investigation in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>The process concludes with a clear, actionable report providing factual data and interpretive recommendations, including ultimate bearing pressures, estimated settlements, and site-specific parameters for retaining wall design. Deliverables are aligned with the requirements of MBIE and local authority expectations, ensuring your project moves smoothly through building consent. By combining advanced testing like <a href="/grain-size/">grain size analysis (sieve + hydrometer)</a> and <a href="/atterberg-limits/">Atterberg limits</a> determination with local geological expertise, we deliver a precise ground model that de-risks your investment. This integrated approach transforms subsurface uncertainty into a reliable basis for design, saving time and cost during construction.</p></div></section></main>
     </div>
 </div>
 

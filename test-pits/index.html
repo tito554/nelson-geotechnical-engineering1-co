@@ -25,6 +25,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 tr:nth-child(even) { background: #f8fafc; }
@@ -56,7 +61,7 @@ a { color: var(--primary); text-decoration: none; }
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    .content-area { flex-direction: column; }
+    
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
@@ -82,7 +87,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat-name:hover { color: #c9a961; }
 .sidebar .cat-sub a {
     display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
@@ -103,7 +108,7 @@ summary::-webkit-details-marker { display: none; }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 main p { margin-bottom: 1rem; color: #334155; }
@@ -126,13 +131,15 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-    .container { padding: 1rem; }
+    
 .header-contact a:hover { color: white; }
 details[open] summary::before { content: '− '; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }</style>
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ details[open] summary::before { content: '− '; }
 
             <section>
                 <h2>Critical ground factors in Nelson</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>A 22-tonne excavator with a tilting bucket sits on a Stoke residential section, cutting a trench across a suspected paleochannel. The operator works off mats to avoid disturbing the thin topsoil, while the geologist watches the spoil pile for colour changes. The immediate hazard is the gravel face itself: Moutere Gravel can stand near-vertical for hours, then ravel without warning if a silt seam is wetted from a leaking pipe. Every pit deeper than 1.5 m requires a specific trenching permit and either battered sides at a safe angle or hydraulic shoring. Confined-space protocols apply once the pit exceeds chest height, with a stand-by person and calibrated gas monitor in place. Groundwater inflow in Nelson's lower-lying suburbs—particularly around Annesbrook—can fill a pit rapidly during a spring tide, so dewatering pumps are rigged before the bucket breaks the water table. These controls, documented in the site-specific health and safety plan, mean the data yield never comes at the expense of crew safety.</p>
             </section>
 
@@ -201,6 +210,8 @@ details[open] summary::before { content: '− '; }
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>How deep can an exploratory test pit be excavated in Nelson's soils?</summary><p>With a standard 14–22 tonne excavator, depths of 3.5–4.5 m are routinely achievable in Moutere Gravel and stiff Tahunanui Formation clays. Deeper pits require benched or battered sides and a geotechnical assessment of face stability. For depths beyond 5 m, machine-dug pits become uneconomical and a borehole drilling programme is usually more appropriate.</p></details><details><summary>What is the typical cost range for a test pit investigation in Nelson?</summary><p>A single exploratory test pit with full logging, in-situ density testing, and bulk sampling typically ranges from NZ$720 to NZ$1,220, depending on access constraints, depth, and the volume of laboratory testing specified. A programme of three pits with a factual report generally falls within a comparable per-pit rate, with mobilisation costs spread across the investigation.</p></details><details><summary>Do you backfill the pits after logging, and what material is used?</summary><p>Yes, all pits are backfilled as part of the scope unless a prolonged observation period is requested. The fill is placed in controlled 200 mm lifts and compacted with a padfoot roller or vibrating plate. Where the pit lies beneath a future foundation, the backfill is typically a granular material compacted to 95% of maximum dry density to minimise settlement.</p></details><details><summary>What safety measures apply when excavating deeper than 1.5 m in Nelson's gravels?</summary><p>WorkSafe NZ requires that any excavation deeper than 1.5 m have either benched or battered sides or be protected by certified trench shields. Our crews conduct a daily pre-start inspection, monitor for cracking or slumping of the pit walls, and use gas detectors where organic soils or fill are encountered. A spotter remains at the surface throughout the logging operation.</p></details>
             </section>
 

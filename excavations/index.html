@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 tr:nth-child(even) { background: #f8fafc; }
@@ -53,7 +58,7 @@ a { color: var(--primary); text-decoration: none; }
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    .content-area { flex-direction: column; }
+    
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
@@ -79,7 +84,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat-name:hover { color: #c9a961; }
 .sidebar .cat-sub a {
     display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
@@ -100,7 +105,7 @@ summary::-webkit-details-marker { display: none; }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 main p { margin-bottom: 1rem; color: #334155; }
@@ -123,13 +128,15 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-    .container { padding: 1rem; }
+    
 .header-contact a:hover { color: white; }
 details[open] summary::before { content: '− '; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }</style>
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://nelson.geotechnical-engineering1.co/excavations/","description":"Underground excavations in Nelson require a rigorous understanding of the region’s variable geology, from alluvial gravels to weathered Moutere Gravel and","inLanguage":"en","@type":"WebPage","url":"https://nelson.geotechnical-engineering1.co/excavations/","name":"Underground Excavations in Nelson – New Zealand","isPartOf":{"url":"https://nelson.geotechnical-engineering1.co","@id":"https://nelson.geotechnical-engineering1.co/#website","@type":"WebSite"}},{"@type":"BreadcrumbList","itemListElement":[{"name":"Home","position":1,"item":"https://nelson.geotechnical-engineering1.co/","@type":"ListItem"},{"name":"Underground Excavations","position":2,"item":"https://nelson.geotechnical-engineering1.co/excavations/","@type":"ListItem"}]},{"@type":"ItemList","itemListElement":[{"url":"https://nelson.geotechnical-engineering1.co/soft-ground-tunnels/","name":"Geotechnical analysis for soft soil tunnels","position":1,"@type":"ListItem"},{"url":"https://nelson.geotechnical-engineering1.co/deep-excavations/","name":"Geotechnical design of deep excavations","position":2,"@type":"ListItem"},{"url":"https://nelson.geotechnical-engineering1.co/excavation-monitoring/","name":"Geotechnical excavation monitoring","position":3,"@type":"ListItem"}],"name":"Underground Excavations"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -199,7 +206,14 @@ details[open] summary::before { content: '− '; }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../soft-ground-tunnels/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotechnical analysis for soft soil tunnels</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../deep-excavations/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotechnical design of deep excavations</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../excavation-monitoring/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotechnical excavation monitoring</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/estudio-mecanica-suelos-3.webp" alt="Underground Excavations in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Underground excavations in Nelson demand a thorough understanding of the region’s complex geology, which ranges from weathered bedrock of the Brook Street and Maitai terranes to alluvial and colluvial deposits in valley floors. Site characterisation must align with New Zealand standards, including NZS 4404:2010 for land development and the NZ Geotechnical Society guidelines. Early-phase <a href="/investigation/">investigation</a> defines the ground profile and constrains risks such as variable weathering, perched groundwater, and fault-influenced fracturing. When weak or compressible soils are anticipated, targeted <a href="/cpt-test/">CPT</a> soundings provide continuous stratigraphic data essential for design.</p>
+<p>Geotechnical practice in New Zealand follows internationally recognised principles adapted to local conditions, with robust methodologies for underground works. Field campaigns integrate <a href="/lab-in-situ/">in-situ testing</a> such as pressuremeter and dilatometer profiling with direct density verification using the <a href="/sand-cone-density/">sand cone method</a>, which remains a reliable reference for compaction control in backfill and tunnel abutments. Laboratory programmes on recovered core and bulk samples characterise intact strength, stiffness, and durability. Routine index testing includes <a href="/atterberg-limits/">Atterberg limits</a> and <a href="/grain-size/">grain size analysis</a> by sieve and hydrometer, delivering the classification framework required for ground behaviour assessment and support pressure calculation under the New Zealand Geotechnical Society’s design modules.</p>
+<p>Typical underground projects in Nelson include cut-and-cover tunnels for arterial road upgrades, deep sewer and stormwater alignments through mixed-face conditions, and basement excavations in the CBD where retaining systems must manage highly variable residual soils. Hillside developments on the Port Hills and Atawhai slopes frequently require benched excavations or anchored walls, with stability governed by joint orientation and groundwater perched on clay-altered horizons. Each project relies on a defensible ground model built from laboratory data, including <a href="/laboratory/">laboratory</a> strength and consolidation testing, to inform temporary works design and long-term lining requirements.</p>
+<img src="/img/monitoreo-excavaciones-3.webp" alt="Underground Excavations in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>The delivery process follows a staged approach from desk study and target ground investigation through to interpretative reporting and construction-phase monitoring. Clients receive a ground investigation report presenting factual data, a geotechnical interpretative report with design parameters, and an excavation assessment addressing stability, dewatering, and settlement. This integrated workflow, anchored in local experience and New Zealand standards, equips contractors and designers with the reliable subsurface information needed to manage risk and progress underground excavations safely and efficiently across the Nelson region.</p></div></section></main>
     </div>
 </div>
 

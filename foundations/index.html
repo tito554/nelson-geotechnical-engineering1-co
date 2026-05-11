@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 tr:nth-child(even) { background: #f8fafc; }
@@ -53,7 +58,7 @@ a { color: var(--primary); text-decoration: none; }
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    .content-area { flex-direction: column; }
+    
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
@@ -79,7 +84,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat-name:hover { color: #c9a961; }
 .sidebar .cat-sub a {
     display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
@@ -100,7 +105,7 @@ summary::-webkit-details-marker { display: none; }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 main p { margin-bottom: 1rem; color: #334155; }
@@ -123,13 +128,15 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-    .container { padding: 1rem; }
+    
 .header-contact a:hover { color: white; }
 details[open] summary::before { content: '− '; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }</style>
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://nelson.geotechnical-engineering1.co/foundations/","description":"In Nelson, foundation design must respond to variable ground conditions—from dense alluvial gravels on the flats to weathered Port Hills loess and softer e","inLanguage":"en","@type":"WebPage","url":"https://nelson.geotechnical-engineering1.co/foundations/","name":"Foundations in Nelson – New Zealand","isPartOf":{"url":"https://nelson.geotechnical-engineering1.co","@id":"https://nelson.geotechnical-engineering1.co/#website","@type":"WebSite"}},{"@type":"BreadcrumbList","itemListElement":[{"name":"Home","position":1,"item":"https://nelson.geotechnical-engineering1.co/","@type":"ListItem"},{"name":"Foundations","position":2,"item":"https://nelson.geotechnical-engineering1.co/foundations/","@type":"ListItem"}]},{"@type":"ItemList","itemListElement":[{"url":"https://nelson.geotechnical-engineering1.co/piles/","name":"Pile foundation design","position":1,"@type":"ListItem"}],"name":"Foundations"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -199,7 +206,14 @@ details[open] summary::before { content: '− '; }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../piles/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Pile foundation design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/pilotes-5.webp" alt="Foundations in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Foundation engineering in Nelson requires a thorough understanding of the region's complex geology, which ranges from alluvial gravels of the Waimea Plains to the weathered Port Hills gravels and variable Moutere Gravel formations. Our foundation services address the critical interface between structural loads and these diverse ground conditions, guided by the New Zealand Building Code (Clause B1) and MBIE/NZGS Module 1 guidelines for geotechnical investigation. The initial phase always involves a detailed <a href="/investigation/">geotechnical investigation</a> to characterise subsurface profiles, identify potential liquefiable layers, and assess bearing capacity, ensuring designs comply with the natural hazard provisions of the Nelson Resource Management Plan.</p>
+<p>Our methodology aligns with NZGS and NZS 4402 standards, employing a phased approach from desk study through to detailed design. We rely heavily on direct-push techniques such as the <a href="/cpt-test/">Cone Penetration Test (CPT)</a> to provide continuous stratigraphic profiling and empirical estimates of foundation performance, particularly in the granular soils common across Nelson. Where cohesive soils are encountered, undisturbed sampling via boreholes allows for advanced <a href="/laboratory/">laboratory testing</a>, including the determination of <a href="/atterberg-limits/">Atterberg limits</a> and <a href="/grain-size/">grain size analysis</a> through sieve and hydrometer methods, to classify soil behaviour and predict settlement potential under load.</p>
+<p>Typical projects in Nelson range from residential dwellings on the sloping sites of Atawhai and The Wood to commercial developments in the central city and light industrial structures in Stoke. For residential foundations, we often design stiffened raft slabs or specifically engineered rib-raft floors to manage ground movement on reactive soils, while larger commercial projects frequently require piled foundations bearing within competent Moutere Gravel. A critical component of QA/QC on these sites is the verification of structural fill and backfill compaction, where we deploy the <a href="/sand-cone-density/">sand cone density test</a> to ensure compliance with NZS 4431 and project specifications, providing documented proof of achieved relative density.</p>
+<img src="/img/pilotes-5.webp" alt="Foundations in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>The foundation design process integrates data from our <a href="/lab-in-situ/">in-situ testing</a> programmes and laboratory results to produce clear, actionable recommendations. Deliverables include a detailed interpretive report outlining bearing capacity, anticipated settlement magnitudes, liquefaction assessment, and specific foundation parameters such as ultimate and serviceability limit state pressures. This technical rigour provides clients and structural engineers with a reliable basis for construction, reducing geotechnical risk and ensuring long-term performance of foundations across the Nelson-Tasman region.</p></div></section></main>
     </div>
 </div>
 

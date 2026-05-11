@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 tr:nth-child(even) { background: #f8fafc; }
@@ -53,7 +58,7 @@ a { color: var(--primary); text-decoration: none; }
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    .content-area { flex-direction: column; }
+    
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
@@ -79,7 +84,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat-name:hover { color: #c9a961; }
 .sidebar .cat-sub a {
     display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
@@ -100,7 +105,7 @@ summary::-webkit-details-marker { display: none; }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 main p { margin-bottom: 1rem; color: #334155; }
@@ -123,13 +128,15 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-    .container { padding: 1rem; }
+    
 .header-contact a:hover { color: white; }
 details[open] summary::before { content: '− '; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }</style>
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://nelson.geotechnical-engineering1.co/slopes/","description":"In Nelson’s variable terrain—from Port Hills loess to Moutere gravels—slope and wall stability demands designs aligned with New Zealand’s geotechnical fram","inLanguage":"en","@type":"WebPage","url":"https://nelson.geotechnical-engineering1.co/slopes/","name":"Slopes & Walls in Nelson – New Zealand","isPartOf":{"url":"https://nelson.geotechnical-engineering1.co","@id":"https://nelson.geotechnical-engineering1.co/#website","@type":"WebSite"}},{"@type":"BreadcrumbList","itemListElement":[{"name":"Home","position":1,"item":"https://nelson.geotechnical-engineering1.co/","@type":"ListItem"},{"name":"Slopes & Walls","position":2,"item":"https://nelson.geotechnical-engineering1.co/slopes/","@type":"ListItem"}]},{"@type":"ItemList","itemListElement":[{"url":"https://nelson.geotechnical-engineering1.co/anchors/","name":"Active/passive anchor design","position":1,"@type":"ListItem"},{"url":"https://nelson.geotechnical-engineering1.co/retaining-walls/","name":"Retaining wall design","position":2,"@type":"ListItem"},{"url":"https://nelson.geotechnical-engineering1.co/slope-stability/","name":"Slope stability analysis","position":3,"@type":"ListItem"}],"name":"Slopes & Walls"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -198,7 +205,14 @@ details[open] summary::before { content: '− '; }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../anchors/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Active/passive anchor design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../retaining-walls/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Retaining wall design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../slope-stability/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Slope stability analysis</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/muros-contencion-4.webp" alt="Slopes & Walls in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Slope stability and retaining wall design in Nelson demand a rigorous understanding of the region’s complex geology, which includes Moutere Gravels, Port Hills loess, and weathered bedrock formations overlying the Richmond and Waimea Faults. Our geotechnical services cover the full lifecycle of slope and wall projects, from initial <a href="/investigation/">investigation</a> and <a href="/cpt-test/">CPT (Cone Penetration Test)</a> profiling to detailed design verification. All assessments align with the New Zealand Building Code, Acceptable Solutions B1/VM4, and MBIE/NZGS guidelines for slope stability and retaining structures, ensuring compliance with Nelson City Council consenting pathways.</p>
+<p>Our methodology follows the NZGS Soil and Rock Description Guidelines and relevant NZS standards for site characterisation. Subsurface conditions are defined using <a href="/cpt-test/">CPT (Cone Penetration Test)</a> soundings, machine-dug test pits, and <a href="/lab-in-situ/">in-situ testing</a> such as Scala penetrometer and shear vane. Laboratory programmes include <a href="/atterberg-limits/">Atterberg limits</a> and <a href="/grain-size/">grain size analysis (sieve + hydrometer)</a> to classify fine-grained soils and assess drained versus undrained strength parameters. For fill placement verification behind walls and on batter slopes, we perform <a href="/sand-cone-density/">field density testing (sand cone method)</a> to confirm compliance with NZS 4431 compaction specifications. Limit equilibrium and finite element analyses incorporate these measured parameters to model global stability and wall performance under seismic and saturated conditions.</p>
+<p>Typical Nelson projects range from residential cut-and-fill batters on steep hillside sections in Atawhai and The Brook, to larger commercial retaining structures along arterial routes such as Rocks Road. We frequently assess multi-tiered timber pole and keystone walls, anchored shotcrete facings on weathered Port Hills loess, and gabion structures adjacent to waterways. Each project requires targeted <a href="/investigation/">investigation</a> of groundwater perched within colluvial layers and evaluation of setback distances relative to Council-defined hazard overlays. For sites with limited access, our <a href="/laboratory/">laboratory</a> testing suite provides strength and consolidation data without the need for extensive deep drilling, accelerating the consenting timeline while maintaining technical defensibility.</p>
+<img src="/img/anclajes-2.webp" alt="Slopes & Walls in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>Our process delivers a concise factual report containing geological cross-sections, design soil parameters, stability calculations, and construction monitoring requirements. The deliverable includes clear recommendations for drainage, global stability factors of safety, and wall embedment depths. By integrating <a href="/lab-in-situ/">in-situ testing</a>, targeted laboratory programmes, and local geological knowledge, we provide Nelson developers, architects, and contractors with a single-source geotechnical solution that reduces consenting risk and supports durable, code-compliant slope and wall designs.</p></div></section></main>
     </div>
 </div>
 

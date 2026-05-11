@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 tr:nth-child(even) { background: #f8fafc; }
@@ -53,7 +58,7 @@ a { color: var(--primary); text-decoration: none; }
     border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none;
 }
-    .content-area { flex-direction: column; }
+    
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
@@ -79,7 +84,7 @@ details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; 
 th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    main { padding: 1.5rem; }
+    
 .sidebar .cat-name:hover { color: #c9a961; }
 .sidebar .cat-sub a {
     display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
@@ -100,7 +105,7 @@ summary::-webkit-details-marker { display: none; }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
 .sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 main p { margin-bottom: 1rem; color: #334155; }
@@ -123,13 +128,15 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 }
 
 #mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-    .container { padding: 1rem; }
+    
 .header-contact a:hover { color: white; }
 details[open] summary::before { content: '− '; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }</style>
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://nelson.geotechnical-engineering1.co/road-geotechnics/","description":"Effective roadway engineering in Nelson must address the region’s variable terrain, from the alluvial plains to the weathered bedrock of the Port Hills. Ou","inLanguage":"en","@type":"WebPage","url":"https://nelson.geotechnical-engineering1.co/road-geotechnics/","name":"Roadway in Nelson – New Zealand","isPartOf":{"url":"https://nelson.geotechnical-engineering1.co","@id":"https://nelson.geotechnical-engineering1.co/#website","@type":"WebSite"}},{"@type":"BreadcrumbList","itemListElement":[{"name":"Home","position":1,"item":"https://nelson.geotechnical-engineering1.co/","@type":"ListItem"},{"name":"Roadway","position":2,"item":"https://nelson.geotechnical-engineering1.co/road-geotechnics/","@type":"ListItem"}]},{"@type":"ItemList","itemListElement":[{"url":"https://nelson.geotechnical-engineering1.co/cbr-road/","name":"CBR study for road design","position":1,"@type":"ListItem"},{"url":"https://nelson.geotechnical-engineering1.co/flexible-pavement/","name":"Flexible pavement design","position":2,"@type":"ListItem"},{"url":"https://nelson.geotechnical-engineering1.co/rigid-pavement/","name":"Rigid pavement design","position":3,"@type":"ListItem"}],"name":"Roadway"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -199,7 +206,14 @@ details[open] summary::before { content: '− '; }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../cbr-road/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">CBR study for road design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../flexible-pavement/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Flexible pavement design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../rigid-pavement/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Rigid pavement design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/ensayo-cbr-4.webp" alt="Roadway in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Roadway projects across Nelson demand a thorough understanding of local ground conditions, shaped by the region’s Moutere Gravels, Port Hills loess, and alluvial deposits from the Maitai and Waimea rivers. Our geotechnical services support every phase of road construction and rehabilitation, from initial desktop studies to detailed <a href="/investigation/">investigation</a> and foundation design. We address slope stability risks common in the Port Hills and variable bearing capacity in valley-floor sediments, ensuring compliance with the NZ Transport Agency Waka Kotahi Bridge Manual and local Tasman-Nelson resource consent requirements. Accurate subsurface profiling through <a href="/cpt-test/">CPT (Cone Penetration Test)</a> and borehole logging identifies soft layers, groundwater, and liquefaction potential critical for resilient pavement design.</p>
+<p>Our field methodology aligns with New Zealand standards NZS 4402 and NZGS guidelines, employing <a href="/lab-in-situ/">in-situ testing</a> to capture strength and stiffness parameters without disturbing natural fabric. For granular subgrade and backfill control, we perform <a href="/sand-cone-density/">field density testing using the sand cone method</a> against NZTA B/2 specification compaction targets. Laboratory characterization runs in parallel, where <a href="/atterberg-limits/">Atterberg limits</a> define plasticity ranges in fine-grained soils and <a href="/grain-size/">grain size analysis (sieve + hydrometer)</a> produces full particle-size distribution curves for pavement material classification under NZTA M/4 and M/6 standards. These combined datasets feed directly into design parameters for cut-fill transitions, retaining structures, and stormwater infiltration assessments.</p>
+<p>Typical Nelson projects include arterial upgrades along State Highway 6 through Stoke, rural road widening on steep terrain near Atawhai, and subdivision access roads cutting into weathered Moutere Gravel terraces. Each requires targeted <a href="/foundations/">foundations</a> evaluation, especially where deep fills overlay compressible estuarine silts or where retaining walls must resist downhill creep in loess-derived colluvium. CPT soundings prove invaluable for mapping paleochannel infills and variable refusal depths along linear routes, reducing the risk of differential settlement at bridge approaches and culvert crossings.</p>
+<img src="/img/ensayo-cpt-2.webp" alt="Roadway in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>Our process begins with a scoped site walkover and utility clearance, followed by intrusive fieldwork and laboratory testing. Deliverables present clear ground models, pavement design parameters, and earthworks specifications in a concise geotechnical report suitable for NZTA and council review. We bridge the gap between investigation data and practical construction guidance, giving contractors and designers the confidence to build durable roadways that perform under Nelson’s seismic demands and seasonal rainfall cycles.</p></div></section></main>
     </div>
 </div>
 
