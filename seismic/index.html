@@ -1,511 +1,351 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><link rel="icon" type="image/svg+xml" href="/img/favicon.svg"><link rel="apple-touch-icon" href="/img/favicon.svg">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Seismic in Nelson – New Zealand</title>
-<meta name="description" content="Nelson’s seismic setting is shaped by the active Alpine Fault and complex valley‑basin geology, making site‑specific hazard assessment essential. This cate">
-<link rel="canonical" href="https://nelson.geotechnical-engineering1.co/seismic/">
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Seismic in Nelson – New Zealand">
-<meta property="og:description" content="Nelson’s seismic setting is shaped by the active Alpine Fault and complex valley‑basin geology, making site‑specific hazard assessment essential. This cate">
-<meta property="og:url" content="https://nelson.geotechnical-engineering1.co/seismic/">
-<meta property="og:site_name" content="Geotechnical Engineering1">
-<meta property="og:image" content="https://nelson.geotechnical-engineering1.co/img/anclajes-2.webp">
-<meta property="og:locale" content="en_NZ">
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Seismic in Nelson – New Zealand">
-<meta name="twitter:description" content="Nelson’s seismic setting is shaped by the active Alpine Fault and complex valley‑basin geology, making site‑specific hazard assessment essential. This cate">
-<style>
-
-@media (max-width: 900px) {
-    .sidebar { display: none; }
-    .content-area { flex-direction: column; }
-    .container { padding: 1rem; }
-    .header-top { flex-direction: column; text-align: center; }
-    main { padding: 1.5rem; }
-}
-/* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
-.sidebar { padding: .5rem 0; }
-tr:nth-child(even) { background: #f8fafc; }
-summary:hover { background: rgba(0,0,0,0.02); }
-.cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
-.cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
-.sidebar .cat-row {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
-    transition: background .15s;
-}
-th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
-.sidebar .cat-toggle {
-    background: none; border: 0; color: inherit; cursor: pointer;
-    padding: .2rem .4rem; font-size: .65rem; transition: transform .2s;
-}
-details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
-.sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
-main section { margin-bottom: 1.5rem; }
-.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
-header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
-h1, h2, h3, h4 { font-family: var(--font-h); }
-a { color: var(--primary); text-decoration: none; }
-
-.normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
-.sidebar .home {
-    display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
-    font-size: .85rem; font-weight: 600;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    text-decoration: none;
-}
-    
-main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
-.servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
-main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
-.cta .contacto-line a { color: white; text-decoration: underline; }
-
-header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-.sidebar .cat-sub {
-    background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
-}
-
-footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
-.sidebar .cat-sub[hidden] { display: none; }
-.sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
-
-details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
-.cta .whatsapp-btn:hover { background: #1eb853; }
-.sidebar {
-    width: 240px; background: var(--dark); color: white; flex-shrink: 0;
-    border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
-    max-height: calc(100vh - 2rem); overflow-y: auto;
+<!DOCTYPE html><html lang="en"><head><link rel="icon" type="image/svg+xml" href="/img/favicon.svg"><link rel="icon" type="image/png" sizes="96x96" href="/favicon.png"><link rel="apple-touch-icon" href="/img/favicon.svg"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Seismic in Nelson – New Zealand</title><meta name="description" content="Seismic engineering in Nelson is not merely a technical discipline—it is a critical foundation for resilient"><link rel="canonical" href="https://nelson.geotechnical-engineering1.co/seismic/"><meta property="og:type" content="website"><meta property="og:title" content="Seismic in Nelson – New Zealand"><meta property="og:description" content="Seismic engineering in Nelson is not merely a technical discipline—it is a critical foundation for resilient"><meta property="og:url" content="https://nelson.geotechnical-engineering1.co/seismic/"><meta property="og:site_name" content="Geotechnical Engineering1"><meta property="og:image" content="https://nelson.geotechnical-engineering1.co/img/aislacion-sismica-1.webp"><meta property="og:locale" content="en_NZ"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Seismic in Nelson – New Zealand"><meta name="twitter:description" content="Seismic engineering in Nelson is not merely a technical discipline—it is a critical foundation for resilient infrastructure in one of New Zealand's most ge"><style>/*afx*/@media (max-width: 900px) {
+.sidebar { display: none; }
+.content-area { flex-direction: column; }
+.container { padding: 1rem; }
+.header-top { flex-direction: column; text-align: center; }
+main { padding: 1.5rem; }
 }
 .servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
-th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    
-.sidebar .cat-name:hover { color: #c9a961; }
-.sidebar .cat-sub a {
-    display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
-    font-size: .78rem; transition: all .15s; text-decoration: none;
-    border-left: 2px solid transparent;
-}
-.servicio p { margin: 0; font-size: .9rem; color: #475569; }
-main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
-footer a { color: rgba(255,255,255,0.85); }
-.servicio:hover { border-color: var(--primary); }
-
-.content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
-summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
-.header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
-.cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 .sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
-summary::-webkit-details-marker { display: none; }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
 .sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
-.sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
-    
-
-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
-main p { margin-bottom: 1rem; color: #334155; }
-:root {
-    --primary: #171717;
-    --accent: #404040;
-    --dark: #0A0A0A;
-    --bg: #FAFAF9;
-    --text: #171717;
-    --font-h: 'Oswald', 'Segoe UI', sans-serif;
-    --font-b: 'Roboto', 'Segoe UI', sans-serif;
-}
-summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
-
-.cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
-.cta .whatsapp-btn {
-    display: inline-block; background: #25D366; color: white;
-    padding: .75rem 1.75rem; border-radius: 8px; font-weight: 600;
-    margin-bottom: 1.25rem; font-size: 1rem;
-}
-
-#mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-    
-.header-contact a:hover { color: white; }
-details[open] summary::before { content: '− '; }
-.sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
-.sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
-.servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-
-</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@id":"https://nelson.geotechnical-engineering1.co/seismic/","description":"Nelson’s seismic setting is shaped by the active Alpine Fault and complex valley‑basin geology, making site‑specific hazard assessment essential. This cate","inLanguage":"en","@type":"WebPage","url":"https://nelson.geotechnical-engineering1.co/seismic/","name":"Seismic in Nelson – New Zealand","isPartOf":{"url":"https://nelson.geotechnical-engineering1.co","@id":"https://nelson.geotechnical-engineering1.co/#website","@type":"WebSite"}},{"@type":"BreadcrumbList","itemListElement":[{"name":"Home","position":1,"item":"https://nelson.geotechnical-engineering1.co/","@type":"ListItem"},{"name":"Seismic","position":2,"item":"https://nelson.geotechnical-engineering1.co/seismic/","@type":"ListItem"}]},{"@type":"ItemList","itemListElement":[{"url":"https://nelson.geotechnical-engineering1.co/seismic-isolation/","name":"Base isolation seismic design","position":1,"@type":"ListItem"},{"url":"https://nelson.geotechnical-engineering1.co/seismic-microzonation/","name":"Seismic microzonation","position":2,"@type":"ListItem"},{"url":"https://nelson.geotechnical-engineering1.co/liquefaction/","name":"Soil liquefaction analysis","position":3,"@type":"ListItem"}],"name":"Seismic"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><style id="minimal-fix-v5">
-/* Sticky para navbar específicos (NO header.hero) */
-.topbar, .navbar, .header-top, .main-header {
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 1010 !important;
+main p { margin-bottom: 1rem; color: #334155; }
+/* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
+.sidebar { padding: .5rem 0; }
+.cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
+.servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.sidebar .cat-name:hover { color: #c9a961; }
+.sidebar .cat-sub {
+background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
 }
-header.hero, .hero { position: relative !important; }
-/* Dropdowns por encima del hero */
-.dd, .has-dd .dd, .nav-item .dd {
-  z-index: 1100 !important;
+:root {
+--primary: #171717;
+--accent: #404040;
+--dark: #0A0A0A;
+--bg: #FAFAF9;
+--text: #171717;
+--font-h: 'Oswald', 'Segoe UI', sans-serif;
+--font-b: 'Roboto', 'Segoe UI', sans-serif;
 }
+h1, h2, h3, h4 { font-family: var(--font-h); }
+summary::-webkit-details-marker { display: none; }
+.sidebar .cat-toggle {
+background: none; border: 0; color: inherit; cursor: pointer;
+padding: .2rem .4rem; font-size: .65rem; transition: transform .2s;
+}
+table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
+details[open] summary::before { content: '− '; }
+.sidebar .home {
+display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
+font-size: .85rem; font-weight: 600;
+border-bottom: 1px solid rgba(255,255,255,0.1);
+text-decoration: none;
+}
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+main section { margin-bottom: 1.5rem; }
+.sidebar {
+width: 240px; background: var(--dark); color: white; flex-shrink: 0;
+border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
+max-height: calc(100vh - 2rem); overflow-y: auto;
+}
+tr:nth-child(even) { background: #f8fafc; }
+.sidebar .cat-sub a {
+display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
+font-size: .78rem; transition: all .15s; text-decoration: none;
+border-left: 2px solid transparent;
+}
+#mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
+.cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
+details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
+th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+* { margin:0; padding:0; box-sizing:border-box; }
+.sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
+.sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
+details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+.sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
+.servicio:hover { border-color: var(--primary); }
+main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
+a { color: var(--primary); text-decoration: none; }
+.normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
+body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
+footer a { color: rgba(255,255,255,0.85); }
+summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
+.cta .whatsapp-btn {
+display: inline-block; background: #25D366; color: white;
+padding: .75rem 1.75rem; border-radius: 8px; font-weight: 600;
+margin-bottom: 1.25rem; font-size: 1rem;
+}
+header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
+.sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
+summary:hover { background: rgba(0,0,0,0.02); }
+.content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
+footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
+.sidebar .cat-row {
+display: flex; justify-content: space-between; align-items: center;
+padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
+transition: background .15s;
+}
+.header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
+.cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
+.sidebar .cat-sub[hidden] { display: none; }
+.cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
+main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
+.cta .whatsapp-btn:hover { background: #1eb853; }
+header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
+.servicio p { margin: 0; font-size: .9rem; color: #475569; }
+.servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
+main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
+.header-contact a:hover { color: white; }
+.cta .contacto-line a { color: white; text-decoration: underline; }
+.sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
+.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }</style><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><style>/*afx*/.leaflet-control { z-index: 800 !important; }
+.leaflet-container { z-index: 1 !important; }
 /* Leaflet contained */
 .leaflet-pane { z-index: 400 !important; }
-.leaflet-control { z-index: 800 !important; }
-.leaflet-container { z-index: 1 !important; }
-</style>
-<style id="inline-link-style">
-p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#1E3A8A) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
-p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
-</style>
-<style id="navbar-compact-fix">
-/* Compactar navbar para que el menú entre completo */
-.navbar{padding:.65rem 1rem !important}
+/* Sticky para navbar específicos (NO header.hero) */
+.topbar, .navbar, .header-top, .main-header {
+position: sticky !important;
+top: 0 !important;
+z-index: 1010 !important;
+}
+/* Dropdowns por encima del hero */
+.dd, .has-dd .dd, .nav-item .dd {
+z-index: 1100 !important;
+}
+header.hero, .hero { position: relative !important; }</style><style>/*afx*/p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#1E3A8A) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}</style><style>/*afx*/@media (max-width:1100px){
+.nav-item{font-size:.7rem !important}
+.navbar .nav{gap:.4rem !important}
+.cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
 .navbar .nav{gap:.55rem !important}
-.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
-.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
 .nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
-.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
-.logo-box,.brand-name,.brand{font-size:.82rem !important}
-.logo-text .main{font-size:.95rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
 .logo-text .sub{font-size:.72rem !important}
 /* Para layouts aberdeen/classic con clase distinta */
 header nav a,.menu a{font-size:.78rem !important}
-@media (max-width:1100px){
-  .nav-item{font-size:.7rem !important}
-  .navbar .nav{gap:.4rem !important}
-  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
-}
-</style>
-<style id="layout-defensive">
-body{overflow-x:clip;max-width:100vw}
-body>*{max-width:100vw}
-@media (min-width:901px){
-  aside{position:relative}
-  aside+main,aside~main,aside~div>main{margin-left:0}
-  .content-area{display:flex;gap:1rem}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.logo-text .main{font-size:.95rem !important}</style><style>/*afx*/@media (min-width:901px){
+aside{position:relative}
+aside+main,aside~main,aside~div>main{margin-left:0}
+.content-area{display:flex;gap:1rem}
 }
 @media (max-width:900px){
-  aside{width:100% !important;position:static !important;height:auto !important}
-  .navbar{flex-wrap:wrap}
+aside{width:100% !important;position:static !important;height:auto !important}
+.navbar{flex-wrap:wrap}
 }
-</style>
-<style id="navbar-fixed-override">
-nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body>*{max-width:100vw}
+body{overflow-x:clip;max-width:100vw}</style><style>/*afx*/@media (max-width:900px){body{padding-top:90px}}
 body{padding-top:60px}
-.hero,.hero-inner,header.hero{padding-top:1rem !important}
-@media (max-width:900px){body{padding-top:90px}}
-</style>
-<style id="sidebar-hover-fix-v2">
-/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}</style><style>/*afx*//* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
 aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
 aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
-aside .cat-name,aside .sb-home,aside nav a{color:inherit}
 /* Bg sutil que funciona en cualquier fondo */
 aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
-aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
-</style>
-<style id="cat-toggle-no-box">
-.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}</style><style>/*afx*/.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
 .cat-toggle:hover{background:rgba(127,127,127,.12) !important}
-.cat-arrow{display:inline-block}
-</style>
-<style id="nav-arrow-no-box">
+.cat-arrow{display:inline-block}</style><style>/*afx*/
 .nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
-</style>
-<style id="post-fixes-v2">
-/* Inline links visibles en prosa */
-p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
-p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
-/* Sidebar hover adaptive */
+</style><style>/*afx*//* Sidebar hover adaptive */
 aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
 aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
-aside .cat-name,aside .sb-home,aside nav a{color:inherit}
-aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
-/* Cat-toggle sin caja */
-.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
-.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
-/* Nav-arrow sin caja */
-.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
 /* Navbar compacto */
 .navbar{padding:.65rem 1rem !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
 .navbar .nav{gap:.55rem !important}
 .nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
 .logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
 /* Layout defensive */
 body{overflow-x:clip;max-width:100vw}
-body>*{max-width:100vw}
-</style>
-<style id="nav-fix-v3">
-nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+body>*{max-width:100vw}</style><style>/*afx*/nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav[aria-label="breadcrumb"] a:hover, .crumb-829b a:hover { color: #FCD34D !important; }
+nav[aria-label="breadcrumb"], .crumb-829b, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb-829b a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+.crumb-829b a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
 nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
-nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
-nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
-nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
-nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
-.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
 .brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
-</style>
-<style id="comprehensive-defaults-v1">
-/* Reset basico */
-* { box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; margin: 0; line-height: 1.6; color: #1E293B; background: #F8FAFC; }
-
-/* Layout wrapper */
-.layout, .main-wrapper, .content-area { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
-
-/* Header */
-.header, .main-header, header.main-header { background: #0F172A; color: #FFF; padding: 1rem 1.5rem; margin-bottom: 1.5rem; }
-.header-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-.header-email { color: #FCD34D; text-decoration: none; }
-.brand, .brand-text, .brand-name { color: #FFFFFF; font-weight: 700; font-size: 1.25rem; line-height: 1.1; }
-.brand-city { color: #94A3B8; font-size: .85rem; display: block; }
-.brand-logo { display: inline-block; vertical-align: middle; }
-
-/* Breadcrumb / crumb */
-.crumb, .breadcrumb { padding: .5rem 0; font-size: .85rem; color: rgba(255,255,255,.85); }
-.crumb a, .breadcrumb a { color: #FFFFFF; text-decoration: underline; }
-.crumb a:hover, .breadcrumb a:hover { color: #FCD34D; }
-
-/* Body wrapper - layout flex */
-.layout { display: grid; grid-template-columns: 240px 1fr; gap: 1.5rem; margin: 1.5rem auto; padding: 0 1.5rem; max-width: 1280px; }
-@media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
-
-/* Sidebar */
-.sb-home, .sidebar, aside { background: #1E293B; color: #FFFFFF; border-radius: 10px; padding: 1rem; }
-.sb-home a, .sidebar a, aside a { color: #FFFFFF; text-decoration: none; display: block; padding: .5rem .75rem; border-radius: 6px; transition: background .15s; }
-.sb-home a:hover, .sidebar a:hover { background: rgba(255,255,255,.08); }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }</style><style>/*afx*/@media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
 .cat-row, .cat-item { display: flex; align-items: center; justify-content: space-between; padding: .4rem .75rem; }
-.cat-name { color: #FFFFFF; font-weight: 500; flex: 1; }
-.cat-toggle, .cat-arrow { background: transparent; border: 0; color: #FFFFFF; cursor: pointer; padding: .2rem .4rem; }
-.cat-sub { padding-left: 1rem; }
-.cat-sub a { font-size: .85rem; color: rgba(255,255,255,.85); padding: .3rem .75rem; }
-
-/* Block / section base */
-.block { padding: 2rem 1.5rem; }
-.block > div { max-width: 1200px; margin: 0 auto; }
-.map-block { padding: 2rem 0; background: #F1F5F9; }
-.map-wrap { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
-#mapa-ciudad { width: 100%; height: 380px; border-radius: 8px; }
-
-/* Cards / grid */
-.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.card { background: #FFF; border: 1px solid #E5E7EB; border-radius: 10px; padding: 1.2rem; text-decoration: none; color: inherit; box-shadow: 0 1px 2px rgba(0,0,0,.04); transition: all .2s; }
-.card:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,0,0,.08); border-color: #1D4ED8; }
-
-/* H1/H2 */
-h1 { color: #0F172A; font-size: 1.85rem; margin: 1rem 0 1.5rem; line-height: 1.2; }
-h2 { color: #1E293B; font-size: 1.35rem; margin: 1.5rem 0 .8rem; font-weight: 700; }
 h3 { color: #1E293B; font-size: 1.1rem; margin: 1rem 0 .5rem; }
-p { margin: 0 0 1rem; color: #374151; }
-a { color: #1D4ED8; }
-
-/* Mid CTA */
-.mid-cta { padding: 2rem 0; }
-.mid-cta > div { max-width: 720px; margin: 0 auto; background: linear-gradient(135deg, #1D4ED815, #1D4ED808); border-left: 4px solid #1D4ED8; padding: 1.6rem 1.8rem; border-radius: 8px; text-align: center; }
-
-/* Footer */
-footer, .footer { background: #0F172A; color: #94A3B8; padding: 1.5rem; text-align: center; margin-top: 2rem; font-size: .85rem; }
-footer a, .footer a { color: #FCD34D; }
-
+.brand-city { color: #94A3B8; font-size: .85rem; display: block; }
+.map-block { padding: 2rem 0; background: #F1F5F9; }
+.cat-sub { padding-left: 1rem; }
 /* Authority refs */
 .authority-refs { color: #94A3B8; font-size: .8rem; }
+.block > div { max-width: 1200px; margin: 0 auto; }
+.map-wrap { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+/* H1/H2 */
+h1 { color: #0F172A; font-size: 1.85rem; margin: 1rem 0 1.5rem; line-height: 1.2; }
+a { color: #1D4ED8; }
+.header-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+h2 { color: #1E293B; font-size: 1.35rem; margin: 1.5rem 0 .8rem; font-weight: 700; }
+/* Cards / grid */
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+/* Footer */
+footer, .footer { background: #0F172A; color: #94A3B8; padding: 1.5rem; text-align: center; margin-top: 2rem; font-size: .85rem; }
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,0,0,.08); border-color: #1D4ED8; }
+.mid-cta-829b > div { max-width: 720px; margin: 0 auto; background: linear-gradient(135deg, #1D4ED815, #1D4ED808); border-left: 4px solid #1D4ED8; padding: 1.6rem 1.8rem; border-radius: 8px; text-align: center; }
+/* Header */
+.header, .main-header, header.main-header { background: #0F172A; color: #FFF; padding: 1rem 1.5rem; margin-bottom: 1.5rem; }
+.crumb-829b a:hover, .breadcrumb a:hover { color: #FCD34D; }
+/* Sidebar */
+.sb-home, .sidebar, aside { background: #1E293B; color: #FFFFFF; border-radius: 10px; padding: 1rem; }
+/* Reset basico */
+* { box-sizing: border-box; }
+footer a, .footer a { color: #FCD34D; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; margin: 0; line-height: 1.6; color: #1E293B; background: #F8FAFC; }
+.brand-logo { display: inline-block; vertical-align: middle; }
+/* Layout wrapper */
+.layout, .main-wrapper, .content-area { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
+/* Breadcrumb / crumb */
+.crumb-829b, .breadcrumb { padding: .5rem 0; font-size: .85rem; color: rgba(255,255,255,.85); }
+/* Body wrapper - layout flex */
+.layout { display: grid; grid-template-columns: 240px 1fr; gap: 1.5rem; margin: 1.5rem auto; padding: 0 1.5rem; max-width: 1280px; }
+.sb-home a, .sidebar a, aside a { color: #FFFFFF; text-decoration: none; display: block; padding: .5rem .75rem; border-radius: 6px; transition: background .15s; }
+.cat-sub a { font-size: .85rem; color: rgba(255,255,255,.85); padding: .3rem .75rem; }
+.cat-name { color: #FFFFFF; font-weight: 500; flex: 1; }
+.card { background: #FFF; border: 1px solid #E5E7EB; border-radius: 10px; padding: 1.2rem; text-decoration: none; color: inherit; box-shadow: 0 1px 2px rgba(0,0,0,.04); transition: all .2s; }
+.sb-home a:hover, .sidebar a:hover { background: rgba(255,255,255,.08); }
+/* Mid CTA */
+.mid-cta-829b { padding: 2rem 0; }
+.cat-toggle, .cat-arrow { background: transparent; border: 0; color: #FFFFFF; cursor: pointer; padding: .2rem .4rem; }
+.header-email { color: #FCD34D; text-decoration: none; }
 .updated-info { color: #94A3B8; font-size: .8rem; font-style: italic; }
-</style>
-<style id="kill-sticky-header-v1">
-/* MATAR position:fixed legacy de fase-i-fixes */
-nav.navbar, .header-top, .main-header, header.header, .header {
-  position: static !important;
-  top: auto !important;
-  left: auto !important;
-  width: auto !important;
+#mapa-ciudad { width: 100%; height: 380px; border-radius: 8px; }
+.crumb-829b a, .breadcrumb a { color: #FFFFFF; text-decoration: underline; }
+p { margin: 0 0 1rem; color: #374151; }
+/* Block / section base */
+.block { padding: 2rem 1.5rem; }
+.brand, .brand-text, .brand-name { color: #FFFFFF; font-weight: 700; font-size: 1.25rem; line-height: 1.1; }</style><style>/*afx*//* Cards en grid: layout flex/grid sin colapsar */
+.cards-grid, [style*="display:grid"][style*="auto-fill"] {
+margin-top: 1rem !important;
 }
-body { padding-top: 0 !important; }
-
 /* Sidebar sticky pero NO encima del header */
 .sb-home, aside.sidebar, .sidebar, aside {
-  position: sticky !important;
-  top: 1rem !important;
-  z-index: 2 !important;
-  width: 260px !important;
+position: sticky !important;
+top: 1rem !important;
+z-index: 2 !important;
+width: 260px !important;
 }
-
-/* Cards en grid: layout flex/grid sin colapsar */
-.cards-grid, [style*="display:grid"][style*="auto-fill"] {
-  margin-top: 1rem !important;
-}
-
 /* Layout main: padding-top para clearance */
 main, .main-content, .content-area, .layout > *:not(aside):not(.sidebar) {
-  padding-top: 0 !important;
+padding-top: 0 !important;
 }
-</style>
-<style id="subwrap-fix-v8">
-/* cat-item: BLOCK (no flex) — children flow normal y cat-sub-wrap toma full width */
-.cat-item, details {
-  display: block !important;
-  position: relative !important;
+body { padding-top: 0 !important; }
+/* MATAR position:fixed legacy de fase-i-fixes */
+nav.navbar, .header-top, .main-header, header.header, .header {
+position: static !important;
+top: auto !important;
+left: auto !important;
+width: auto !important;
+}</style><style>/*afx*//* cat-sub-wrap: full width abajo */
+.cat-sub-wrap, .cat-sub, .nav-cat-sub {
+flex-basis: 100% !important;
+width: 100% !important;
+max-width: 100% !important;
+order: 3 !important;
+position: static !important;
+background: rgba(0,0,0,.15) !important;
+padding: .4rem 0 .8rem !important;
+}
+.cat-toggle, .cat-arrow {
+flex-shrink: 0 !important;
+order: 2 !important;
 }
 /* cat-row interno: SI flex para alinear name + toggle */
 .cat-row {
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  width: 100% !important;
+display: flex !important;
+flex-wrap: nowrap !important;
+align-items: center !important;
+justify-content: space-between !important;
+width: 100% !important;
 }
-.cat-name {
-  flex: 1 1 auto !important;
-  min-width: 0 !important;
-  word-break: normal !important;
-  overflow-wrap: break-word !important;
-  white-space: normal !important;
-  order: 1 !important;
-}
-.cat-toggle, .cat-arrow {
-  flex-shrink: 0 !important;
-  order: 2 !important;
-}
-/* cat-sub-wrap: full width abajo */
-.cat-sub-wrap, .cat-sub, .nav-cat-sub {
-  flex-basis: 100% !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  order: 3 !important;
-  position: static !important;
-  background: rgba(0,0,0,.15) !important;
-  padding: .4rem 0 .8rem !important;
+/* cat-item: BLOCK (no flex) — children flow normal y cat-sub-wrap toma full width */
+.cat-item, details {
+display: block !important;
+position: relative !important;
 }
 /* Sub-item links */
 .cat-sub-wrap a, .cat-sub a, .nav-cat-sub a {
-  display: block !important;
-  width: 100% !important;
-  font-size: .82rem !important;
-  line-height: 1.25 !important;
-  padding: .35rem 1rem .35rem 1.8rem !important;
-  white-space: normal !important;
-  word-break: normal !important;
-  overflow-wrap: break-word !important;
-  box-sizing: border-box !important;
+display: block !important;
+width: 100% !important;
+font-size: .82rem !important;
+line-height: 1.25 !important;
+padding: .35rem 1rem .35rem 1.8rem !important;
+white-space: normal !important;
+word-break: normal !important;
+overflow-wrap: break-word !important;
+box-sizing: border-box !important;
 }
-</style>
-</head>
-<body>
+.cat-name {
+flex: 1 1 auto !important;
+min-width: 0 !important;
+word-break: normal !important;
+overflow-wrap: break-word !important;
+white-space: normal !important;
+order: 1 !important;
+}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://nelson.geotechnical-engineering1.co/seismic/", "url": "https://nelson.geotechnical-engineering1.co/seismic/", "name": "Seismic in Nelson – New Zealand", "inLanguage": "en", "description": "Seismic engineering in Nelson is not merely a technical discipline—it is a critical foundation for resilient infrastructure in one of New Zealand's most ge", "isPartOf": {"@type": "WebSite", "@id": "https://nelson.geotechnical-engineering1.co/#website-f131", "url": "https://nelson.geotechnical-engineering1.co"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nelson.geotechnical-engineering1.co/"}, {"@type": "ListItem", "position": 2, "name": "Seismic", "item": "https://nelson.geotechnical-engineering1.co/seismic/"}]}, {"@type": "ItemList", "name": "Seismic", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://nelson.geotechnical-engineering1.co/seismic-isolation/", "name": "Base isolation seismic design"}, {"@type": "ListItem", "position": 2, "url": "https://nelson.geotechnical-engineering1.co/seismic-microzonation/", "name": "Seismic microzonation"}, {"@type": "ListItem", "position": 3, "url": "https://nelson.geotechnical-engineering1.co/liquefaction/", "name": "Soil liquefaction analysis"}]}]}</script><style>/*afx*/.nav-item.has-dd:nth-last-child(-n+5) .dd{left:auto;right:-1rem}</style><style>/*afx*/p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+.navbar .nav{gap:.55rem !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}/*sbhfix*/aside .sb-home{color:#FFF !important}</style><script>(function(){var L=0;function load(){if(L)return;L=1;!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq("init","384176023222929");fbq("track","PageView");}["scroll","mousemove","touchstart","keydown","click"].forEach(function(e){window.addEventListener(e,load,{passive:!0,once:!0})});setTimeout(load,4000);})();</script><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=384176023222929&ev=PageView&noscript=1"/></noscript>  <link rel="preload" as="image" href="/img/aislacion-sismica-1.webp" fetchpriority="high">
 
-<header>
-    <div class="container">
-        <div class="header-top">
-            <div>
-                <div style="display:inline-flex;flex-direction:column;gap:2px;"><span style="font-family:'Oswald',sans-serif;font-weight:800;color:#fafafa;letter-spacing:-0.02em;line-height:1;font-size:24px;">Nelson</span><div style="height:3px;width:60%;background:#171717;border-radius:2px;"></div></div>
-                <div style="color:rgba(255,255,255,0.65);font-size:.8rem;margin-top:.4rem">Nelson, New Zealand</div>
-            </div>
-            <div class="header-contact">
-                <a href="mailto:contact@geotechnical-engineering1.co">contact@geotechnical-engineering1.co</a>
-            </div>
-        </div>
-        <nav aria-label="breadcrumb" style="padding:.3rem 0;font-size:.78rem;color:rgba(255,255,255,0.75)"><ol style="list-style:none;display:flex;gap:.35rem;flex-wrap:wrap;padding:0;margin:0"><li><a href="/" style="color:inherit;text-decoration:none">Home</a></li><li>›</li><li aria-current="page" style="color:rgba(255,255,255,0.95)">Seismic</li></ol></nav>
-        <h1>Seismic in Nelson</h1>
-    </div>
-</header>
-
-<div class="container">
-    <div class="content-area">
-        <aside class="sidebar">
-            <nav><a href="index.html" class="home">Home</a><div class="cat-item" data-cat="investigation"><div class="cat-row"><a href="/investigation/" class="cat-name">Investigation</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Investigation"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/cpt-test/">CPT (Cone Penetration Test)</a></div></div><div class="cat-item" data-cat="lab-in-situ"><div class="cat-row"><a href="/lab-in-situ/" class="cat-name">In-Situ</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir In-Situ"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/sand-cone-density/">Field density test (sand cone method)</a></div></div><div class="cat-item" data-cat="laboratory"><div class="cat-row"><a href="/laboratory/" class="cat-name">Laboratory</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Laboratory"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/atterberg-limits/">Atterberg limits</a><a href="/grain-size/">Grain size analysis (sieve + hydrometer)</a></div></div><div class="cat-item" data-cat="foundations"><div class="cat-row"><a href="/foundations/" class="cat-name">Foundations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Foundations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/piles/">Pile foundation design</a></div></div><div class="cat-item" data-cat="slopes"><div class="cat-row"><a href="/slopes/" class="cat-name">Slopes & Walls</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Slopes & Walls"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/anchors/">Active/passive anchor design</a><a href="/retaining-walls/">Retaining wall design</a><a href="/slope-stability/">Slope stability analysis</a></div></div><div class="cat-item" data-cat="ground-improvement"><div class="cat-row"><a href="/ground-improvement/" class="cat-name">Improvement</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Improvement"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/stone-columns/">Stone column design</a><a href="/vibrocompaction/">Vibrocompaction design</a></div></div><div class="cat-item" data-cat="seismic"><div class="cat-row"><a href="/seismic/" class="cat-name">Seismic</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Seismic"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/seismic-isolation/">Base isolation seismic design</a><a href="/seismic-microzonation/">Seismic microzonation</a><a href="/liquefaction/">Soil liquefaction analysis</a></div></div><div class="cat-item" data-cat="road-geotechnics"><div class="cat-row"><a href="/road-geotechnics/" class="cat-name">Roadway</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Roadway"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/cbr-road/">CBR study for road design</a><a href="/flexible-pavement/">Flexible pavement design</a><a href="/rigid-pavement/">Rigid pavement design</a></div></div><div class="cat-item" data-cat="excavations"><div class="cat-row"><a href="/excavations/" class="cat-name">Excavations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Excavations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels</a><a href="/deep-excavations/">Geotechnical design of deep excavations</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring</a></div></div></nav>
-        </aside>
-        <main>
-            <section><p>Nelson’s seismic setting is shaped by the active Alpine Fault and complex valley‑basin geology, making site‑specific hazard assessment essential. This category covers geotechnical earthquake engineering aligned with the NZGS guidelines and MBIE seismic provisions, addressing local amplification in alluvial deposits and slope stability in the Port Hills. Our <a href="/seismic-microzonation/">seismic microzonation</a> studies map variable ground response across the region, while <a href="/liquefaction/">soil liquefaction analysis</a> targets the silty‑sand layers common in reclaimed and riverside areas.</p>
-<p>Residential subdivisions, commercial developments, and lifeline infrastructure in higher‑hazard zones routinely require these investigations as part of the resource consent process. For critical facilities where operational continuity is paramount, we integrate findings with <a href="/seismic-isolation/">base isolation seismic design</a> to reduce demand on structures. A thorough understanding of Nelson’s subsurface dynamics leads to safer, code‑compliant outcomes.</p></section>
-
-            <blockquote style="border-left:4px solid #171717;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">In Nelson's mixed colluvium and gravel, anchor performance hinges less on the steel grade and more on how the grout column interacts with the surrounding ground.</blockquote>
-
-            
-
-            <section>
-                <h2>Service characteristics in Nelson</h2>
-                <div>A retaining wall project along Rocks Road forced the team to rethink the anchor layout entirely. The cut faced the bay, with a tidally influenced groundwater table and schist dipping unfavourably toward the excavation. The initial design called for a grid of active multistrand anchors at 3-metre centres. During installation the first three anchors lost grout into open joints—a clear sign the rock mass was more fractured than the borehole logs suggested. The solution paired passive rock dowels in the upper weathered zone with deeper active anchors socketed into competent greywacke below 12 metres. Each active anchor was stressed in three load increments, holding at each step to measure displacement with a dial gauge reading to 0.01 mm. The proof test protocol followed NZS 3404, requiring less than 2 mm of creep over a 10-minute hold at 1.5 times design load. Six anchors failed the first cycle and needed re-grouting. The second cycle passed. That wall has now stood through two major storm surges and a 5.8 magnitude shake without a millimetre of lateral movement.</div>
-            </section>
-
-            <figure style="margin:2rem auto;text-align:center;max-width:60%"><img src="/img/anclajes-2.webp" alt="Active and Passive Anchor Systems for Challenging Ground in Nelson" width="600" height="300" loading="lazy" decoding="async" style="width:100%;max-height:160px;object-fit:cover;border-radius:8px"><figcaption style="font-size:.78rem;color:#64748b;margin-top:.4rem">Active and Passive Anchor Systems for Challenging Ground in Nelson</figcaption></figure>
-
-            <div style="max-width:700px;margin:1.5rem auto;border-left:4px solid #171717;border-radius:6px;overflow:hidden;background:#FFF;box-shadow:0 1px 3px rgba(0,0,0,.05)"><table style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr style="background:#171717;color:#FFF"><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Parameter</th><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Typical value</th></tr></thead><tbody><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Anchor type</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Active (prestressed) / Passive (reaction)</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Typical working load range</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">200–1,200 kN for strand anchors</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Bonded length in Moutere Gravel</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">6–9 m depending on gravel density</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Proof test criterion (NZS 3404)</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">≤2 mm creep over 10 min at 1.5× working load</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Corrosion protection class</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">DCP (double corrosion protection) mandatory near coast</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Grout compressive strength</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">≥30 MPa at 28 days, neat cement mix</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Lock-off load for active anchors</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Typically 110% of design working load</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Minimum free length</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">≥5 m or per NZGS guidelines for soil anchors</td></tr></tbody></table></div>
-
-            
-
-            <section>
-                <h2>Critical ground factors in Nelson</h2>
-                <p>The testing rig itself tells the story. A hollow-stem auger spins into the cut, a strand is fed down to the designed bond zone, and high-pressure grout fills the annular space. In Nelson's hillside subdivisions, that rig is often working on a battered bench with barely enough setback for the power pack. The biggest technical headache is confirming grout-to-ground bond in variable rock. A 15-metre anchor in the Moutere Gravel might proof-test beautifully at 1.5 times working load. Shift twenty metres into the weathered schist and the same design can show creep beyond the 2 mm criterion in the first cycle. That's when passive anchors become a safer bet—they rely on progressive load transfer along the full bonded length, forgiving localised weak zones. Corrosion protection is another layer. The marine aerosol from Tasman Bay drifts inland over The Wood and Nelson South, accelerating attack on exposed anchor heads. Double-corrosion-protected (DCP) systems are non-negotiable here, with encapsulation from the internal wedge to the trumpet.</p>
-            </section>
-
-            
-    <section class="block mid-cta-829b" style="padding:2rem 0">
-      <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#16A34A15,#16A34A08);border-left:4px solid #16A34A;padding:1.6rem 1.8rem;border-radius:8px;text-align:center">
-        <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>
-        <p style="margin:0 0 1rem;color:#64748B;font-size:.92rem;text-align:center">Reply within 24h.</p>
-        <div style="margin:.4rem 0 0;text-align:center"><a href="mailto:contact@geotechnical-engineering1.co" style="display:inline-block;background:#16A34A;color:#FFF !important;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:800;font-size:1.05rem;box-shadow:0 4px 12px rgba(0,0,0,.15)">Email: contact@geotechnical-engineering1.co</a></div>
-      </div>
-    </section>
-
-            <div class="normas">
-                <strong>Applicable standards:</strong> NZS 3404:2009 (Steel Structures – including anchor testing protocols), NZS 4203:1992 (General structural design and loading – superseded but referenced in legacy consents), NZGS guidelines for soil and rock anchors, BS 8081:2015 (Code of practice for grouted anchors – commonly referenced in NZ practice), FHWA-NHI-05-039 (Micropile and ground anchor design)
-            </div>
-
-            <section>
-                <h2>Our services</h2>
-                <p>Anchor design in the Nelson-Tasman region typically branches into two distinct service tracks, shaped by the site geology and the performance required from the retained structure.</p>
-                <style>.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#171717;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}.servicios-grid a.servicio-link:hover{border-color:#171717;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover h3{color:#171717}</style><div class="servicios-grid"><div class="servicio"><h3>Active anchor design and proof testing</h3><p>Full design of prestressed strand anchors with lock-off procedures, load cell monitoring, and staged proof testing according to NZS 3404. Suited for retaining walls, bridge abutments, and any structure where immediate load transfer and minimal deformation are critical.</p></div><div class="servicio"><h3>Passive rock dowel and soil nail systems</h3><p>Design of fully grouted passive reinforcement for cut slopes, rock faces, and excavations in weathered schist or colluvium. Includes pull-out testing on sacrificial nails to confirm bond strength before production installation begins.</p></div></div>
-            </section>
-
-            
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
-<img src="/img/aislacion-sismica-1.webp" alt="Seismic in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
-<p>Seismic site assessment in Nelson addresses the critical need to understand how local ground conditions influence earthquake shaking and foundation performance. The region’s geology is dominated by Moutere Gravels, alluvial deposits of the Waimea Plains, and estuarine silts near Nelson Haven, all of which respond very differently during a seismic event. Site-specific studies must comply with the requirements of the New Zealand Building Code, particularly Clause B1 (Structure), and follow the guidance of MBIE/NZGS Module 1 for seismic parameters and Module 2 for geotechnical investigation, ensuring foundation designs align with the NZS 1170.5 seismic actions standard. Our <a href="/investigation/">geotechnical investigation</a> services provide the essential data to classify site subsoil class in accordance with NZS 1170.5, while targeted <a href="/cpt-test/">CPT testing</a> rapidly delineates soil behaviour type and cyclic resistance in these variable sediments.</p>
-<p>Our methodology relies on the rigorous framework established by New Zealand standards and accepted industry practice. Field campaigns begin with a combination of <a href="/cpt-test/">cone penetration tests</a> and borehole drilling to capture continuous stratigraphic profiles, with shear wave velocity (Vs) measured directly via seismic CPT or downhole methods to satisfy Section 3 of NZS 1170.5. In boreholes, we perform <a href="/lab-in-situ/">In-Situ</a> such as Standard Penetration Tests (SPT) and collect undisturbed samples for advanced laboratory evaluation. The laboratory programme, conducted to NZGS guidelines, typically includes cyclic triaxial testing, resonant column tests, and index property determination such as <a href="/atterberg-limits/">Atterberg limits</a> and <a href="/grain-size/">grain size analysis</a> to assess liquefaction susceptibility. This integrated field and laboratory approach provides the parameters required for rigorous seismic response analysis, from simplified liquefaction triggering procedures through to two-dimensional dynamic finite element modelling.</p>
-<p>Typical projects in Nelson where seismic assessment is fundamental range from residential subdivisions on the sloping Moutere Gravel terrain to commercial developments on the deep alluvial soils of Stoke and Richmond, and port-related infrastructure near the waterfront. The high groundwater table across much of the Waimea Plains elevates liquefaction risk, making detailed assessment mandatory for medium- and high-importance structures. For lightly loaded residential foundations, seismic demand often governs the bearing capacity and settlement checks, while larger industrial projects require time-history analysis to design <a href="/foundations/">deep foundations</a> that mitigate kinematic and inertial effects. Our team has extensive experience with the specific depositional environments of the Tasman region, allowing us to recognise problematic units such as loose, saturated sands within the Appleby Gravels that are prone to cyclic softening.</p>
-<img src="/img/microzonificacion-sismica-3.webp" alt="Seismic in Nelson" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
-
-<p>The seismic assessment process delivers a clear, actionable site subsoil classification and a suite of geotechnical parameters for structural design. Clients receive a comprehensive report containing seismic hazard context, field and laboratory data, liquefaction assessment results, and modulus degradation curves where advanced testing is performed. We provide explicit recommendations for Improvement if required and practical foundation options calibrated to the performance expectations of NZS 1170.5. By integrating local geological knowledge with the full spectrum of investigation techniques—from <a href="/sand-cone-density/">field density testing</a> for compaction control to sophisticated laboratory dynamic testing—we deliver certainty on a site’s seismic performance, enabling informed decision-making and code-compliant design in Nelson’s demanding seismic environment.</p></div></section></main>
-    </div>
-</div>
-
-<section class="block map-block" style="padding:2rem 1.5rem;background:#f5f5f5">
-<div style="max-width:1200px;margin:0 auto">
-<h2 style="text-align:center;margin-bottom:.5rem;font-weight:700">Location and service area</h2>
-<p style="text-align:center;color:#555;margin-bottom:1.5rem">We serve projects in Coverage area — Nelson and surroundings.</p>
-<div class="map-wrap"><div id="map_3e504a" style="height:380px;width:100%;border-radius:8px;overflow:hidden"></div></div>
-<script>
-(function(){
-  if (typeof L === 'undefined' || !L.Icon) return;
-  var m=L.map("map_3e504a",{zoomControl:true,attributionControl:true}).setView([-41.2711,173.2837],12);
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
-    attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
-  }).addTo(m);
-  L.marker([-41.2711,173.2837],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(m).bindPopup("Coverage area — Nelson");
-})();
-</script>
-</div>
-</section>
-
-<footer style="background:linear-gradient(135deg,#0A0A0A,#40404022);color:#FFF;padding:3rem 1.5rem"><div style="max-width:720px;margin:0 auto;text-align:center"><h3 style="font-size:1.4rem;margin:0 0 .5rem;color:#FFF">Ready for your project?</h3><p style="margin:0 0 1.5rem;color:rgba(255,255,255,.8)">Nelson, New Zealand</p><a href="mailto:contact@geotechnical-engineering1.co" style="display:inline-block;background:#404040;color:#FFF !important;padding:.9rem 2.2rem;border-radius:8px;text-decoration:none;font-weight:700;font-size:1rem;box-shadow:0 4px 14px rgba(0,0,0,.25)">Request a quote — contact@geotechnical-engineering1.co</a><p style="margin:1.8rem 0 0;font-size:.82rem;color:rgba(255,255,255,.5)">© 2026 Geotechnical Engineering1 · All rights reserved</p></div><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>References:</strong> <a href="https://www.standards.govt.nz/" rel="nofollow noopener" target="_blank">Standards New Zealand</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Geotechnical</a></div><div class="updated-info" data-updated="2026-03-05" style="text-align:center;font-size:.85rem;opacity:.7;padding:.5rem 0">Last updated: 2026-03-05</div></footer>
-
-<script>
+<link rel="alternate" hreflang="en-NZ" href="https://nelson.geotechnical-engineering1.co/seismic/">
+<link rel="alternate" hreflang="x-default" href="https://nelson.geotechnical-engineering1.co/seismic/">
+</head><body><header><div class="container"><div class="header-top"><div><div style="display:inline-flex;flex-direction:column;gap:2px;"><span style="font-family:'Oswald',sans-serif;font-weight:800;color:#fafafa;letter-spacing:-0.02em;line-height:1;font-size:24px;">Nelson</span><div style="height:3px;width:60%;background:#171717;border-radius:2px;"></div></div><div style="color:rgba(255,255,255,0.65);font-size:.8rem;margin-top:.4rem">Nelson, New Zealand</div></div><div class="header-contact"><a href="mailto:contact@geotechnical-engineering1.co">contact@geotechnical-engineering1.co</a></div></div><nav aria-label="breadcrumb" style="padding:.3rem 0;font-size:.78rem;color:rgba(255,255,255,0.75)"><ol style="list-style:none;display:flex;gap:.35rem;flex-wrap:wrap;padding:0;margin:0"><li><a href="/" style="color:inherit;text-decoration:none">Home</a></li><li>›</li><li aria-current="page" style="color:rgba(255,255,255,0.95)">Seismic</li></ol></nav><h1>Seismic in Nelson</h1></div></header><div class="container"><div class="content-area"><aside class="sidebar"><nav><a href="index.html" class="home">Home</a><div class="cat-item" data-cat="investigation"><div class="cat-row"><a href="/investigation/" class="cat-name">Investigation</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Investigation"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/cpt-test/">CPT (Cone Penetration Test)</a></div></div><div class="cat-item" data-cat="lab-in-situ"><div class="cat-row"><a href="/lab-in-situ/" class="cat-name">In-Situ</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir In-Situ"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/sand-cone-density/">Field density test (sand cone method)</a></div></div><div class="cat-item" data-cat="laboratory"><div class="cat-row"><a href="/laboratory/" class="cat-name">Laboratory</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Laboratory"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/atterberg-limits/">Atterberg limits</a><a href="/grain-size/">Grain size analysis (sieve + hydrometer)</a></div></div><div class="cat-item" data-cat="foundations"><div class="cat-row"><a href="/foundations/" class="cat-name">Foundations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Foundations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/piles/">Pile foundation design</a></div></div><div class="cat-item" data-cat="slopes"><div class="cat-row"><a href="/slopes/" class="cat-name">Slopes & Walls</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Slopes & Walls"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/anchors/">Active/passive anchor design</a><a href="/retaining-walls/">Retaining wall design</a><a href="/slope-stability/">Slope stability analysis</a></div></div><div class="cat-item" data-cat="ground-improvement"><div class="cat-row"><a href="/ground-improvement/" class="cat-name">Improvement</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Improvement"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/stone-columns/">Stone column design</a><a href="/vibrocompaction/">Vibrocompaction design</a></div></div><div class="cat-item" data-cat="seismic"><div class="cat-row"><a href="/seismic/" class="cat-name">Seismic</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Seismic"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/seismic-isolation/">Base isolation seismic design</a><a href="/seismic-microzonation/">Seismic microzonation</a><a href="/liquefaction/">Soil liquefaction analysis</a></div></div><div class="cat-item" data-cat="road-geotechnics"><div class="cat-row"><a href="/road-geotechnics/" class="cat-name">Roadway</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Roadway"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/cbr-road/">CBR study for road design</a><a href="/flexible-pavement/">Flexible pavement design</a><a href="/rigid-pavement/">Rigid pavement design</a></div></div><div class="cat-item" data-cat="excavations"><div class="cat-row"><a href="/excavations/" class="cat-name">Excavations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Excavations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels</a><a href="/deep-excavations/">Geotechnical design of deep excavations</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring</a></div></div></nav></aside><main><section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><p style="text-align:justify;margin:0 0 1.15rem;line-height:1.75">Seismic engineering in Nelson is not merely a technical discipline—it is a critical foundation for resilient infrastructure in one of New Zealand's most geologically dynamic regions. This category encompasses the assessment, design, and mitigation of earthquake-induced hazards affecting the built environment, from residential dwellings on hillside sections to large-scale commercial developments on the city's alluvial plains. Given Nelson's proximity to the Alpine Fault and several active local fault systems, understanding seismic behaviour of soil and structures is essential for protecting lives, property, and economic continuity. The services within this domain address ground response, foundation performance, and structural protection strategies that collectively reduce vulnerability to one of nature's most unpredictable forces.</p><p style="text-align:justify;margin:0 0 1.15rem;line-height:1.75">Nelson's geological setting presents a complex interplay of rock, gravel, sand, and silt deposits shaped by fluvial and marine processes. Much of the central city and port area sits on deep alluvial sediments of the Waimea Flats, where loose, saturated sands and silts are susceptible to strength loss during strong shaking. The Richmond and Stoke suburbs overlie similar Quaternary deposits, while the hills surrounding Nelson feature weathered bedrock and colluvium with distinct dynamic properties. This variability means seismic hazards differ dramatically across short distances—a hillside site on Moutere Gravel may amplify ground motion differently than a valley-floor site underlain by soft estuarine clays. Comprehensive site characterisation through <a href='/seismic-microzonation/'>seismic microzonation</a> studies becomes indispensable for mapping these variations and informing land-use planning and building design.</p></div></section><section class="block" style="padding:1.5rem"><div style="max-width:1100px;margin:0 auto"><img src="/img/aislacion-sismica-1.webp" alt="Seismic in Nelson" loading="eager" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0" fetchpriority="high"></div></section><section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><p style="text-align:justify;margin:0 0 1.15rem;line-height:1.75">New Zealand's regulatory framework for seismic design is among the most advanced globally, anchored by the Building Act 2004 and the Earthquake-prone Building provisions. Engineering practice follows NZS 1170.5:2004 (Structural design actions – Earthquake actions), which defines seismic hazard parameters including the hazard factor Z for Nelson, typically 0.3 or higher depending on location. The standard requires site-specific soil classification per NZS 1170.5 Section 3, and for sites with potentially liquefiable soils or soft ground, advanced analysis is mandated rather than default assumptions. The Ministry of Business, Innovation and Employment (MBIE) provides guidance on interpreting these standards, while the New Zealand Geotechnical Society's guidelines shape best practice for <a href='/liquefaction/'>soil liquefaction analysis</a> and ground improvement design. Compliance with these documents is not optional—it is the legal duty of designers and territorial authorities to ensure structures meet performance objectives under ultimate limit state shaking.</p><p style="text-align:justify;margin:0 0 1.15rem;line-height:1.75">The types of projects requiring seismic geotechnical services in Nelson span the full spectrum of development. New commercial buildings in the CBD, particularly those exceeding three storeys, routinely require site-specific seismic hazard assessments and foundation analyses that consider kinematic and inertial soil-structure interaction. Port and industrial facilities near the waterfront demand rigorous evaluation of ground deformation potential and retaining structure stability. Residential subdivisions on sloping ground or near waterways benefit from seismic stability assessments that inform consenting and foundation selection. Critical infrastructure—hospitals, bridges, emergency response centres—often justifies advanced protection measures such as <a href='/seismic-isolation/'>base isolation seismic design</a>, decoupling the structure from ground motion to preserve functionality after a major event. Even smaller projects like retaining walls or pipeline installations can trigger seismic considerations when located in areas of known ground amplification or lateral spreading susceptibility.</p></div></section><section class="block mid-cta-829b" style="padding:2rem 0"><div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#16A34A15,#16A34A08);border-left:4px solid #16A34A;padding:1.6rem 1.8rem;border-radius:8px;text-align:center"><h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3><p style="margin:0 0 1rem;color:#64748B;font-size:.92rem;text-align:center">Reply within 24h.</p><div style="margin:.4rem 0 0;text-align:center"><a href="mailto:contact@geotechnical-engineering1.co" style="display:inline-block;background:#16A34A;color:#FFF !important;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:800;font-size:1.05rem;box-shadow:0 4px 12px rgba(0,0,0,.15)">Email: contact@geotechnical-engineering1.co</a></div></div></section><section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../seismic-isolation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Base isolation seismic design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../seismic-microzonation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Seismic microzonation</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../liquefaction/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Soil liquefaction analysis</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section><section class="block" style="padding:2rem 1.5rem"><div style="max-width:900px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">FAQ</h2><details class="faq" style="background:#FFFFFF;border:1px solid #E5E7EB;border-radius:8px;margin-bottom:.6rem;padding:.9rem 1.2rem"><summary style="cursor:pointer;font-weight:600;font-size:1rem">What seismic hazards are most relevant to Nelson, and how do they influence building design?</summary><p style="margin:.7rem 0 0;color:#444;line-height:1.6">Nelson faces ground shaking amplification in deep soil basins, liquefaction in saturated alluvial deposits near the coast and rivers, and landslide potential on steeper terrain. These hazards directly influence foundation depth, ground improvement requirements, and structural system selection. Site-specific analysis ensures designs match actual ground conditions rather than relying on conservative assumptions that may be uneconomical or unconservative generic profiles.</p></details><details class="faq" style="background:#FFFFFF;border:1px solid #E5E7EB;border-radius:8px;margin-bottom:.6rem;padding:.9rem 1.2rem"><summary style="cursor:pointer;font-weight:600;font-size:1rem">When is a site-specific seismic assessment required instead of using standard code provisions?</summary><p style="margin:.7rem 0 0;color:#444;line-height:1.6">A site-specific assessment is required under NZS 1170.5 when soil conditions are outside default classification assumptions—particularly for soft soils, deep deposits, or liquefiable materials. Additionally, structures with higher importance levels (IL3 and above) or those in areas of known complex geology typically warrant detailed analysis to verify design spectra and geotechnical parameters rather than relying on simplified hazard factor approaches.</p></details><details class="faq" style="background:#FFFFFF;border:1px solid #E5E7EB;border-radius:8px;margin-bottom:.6rem;padding:.9rem 1.2rem"><summary style="cursor:pointer;font-weight:600;font-size:1rem">How does the Building Act define earthquake-prone buildings, and what triggers a seismic assessment in Nelson?</summary><p style="margin:.7rem 0 0;color:#444;line-height:1.6">The Building Act 2004 defines earthquake-prone buildings as those achieving less than one-third of new building standard strength. Territorial authorities in Nelson assess buildings based on age, structural type, and occupancy. Assessments are triggered during change of use, alterations, or proactive council programmes. A detailed seismic assessment determines the building's rating and whether strengthening or demolition is required within statutory timeframes.</p></details><details class="faq" style="background:#FFFFFF;border:1px solid #E5E7EB;border-radius:8px;margin-bottom:.6rem;padding:.9rem 1.2rem"><summary style="cursor:pointer;font-weight:600;font-size:1rem">What role does soil-structure interaction play in seismic design for Nelson projects?</summary><p style="margin:.7rem 0 0;color:#444;line-height:1.6">Soil-structure interaction accounts for how foundation soil flexibility modifies structural response during earthquakes. In Nelson's variable ground—from stiff Moutere Gravel to soft coastal sediments—this can alter natural periods, damping, and base shear demands significantly. Ignoring these effects may lead to unconservative structural design or unnecessary over-strength, making it essential for mid-rise and critical facilities on softer sites.</p></details></div></section><section><h2>Coverage in Nelson</h2><link rel="stylesheet" href="/css/leaflet-e275.css"/><div id="mapa-ciudad"></div><script src="/js/leaflet-e275.js"></script><script>
+var map = L.map('mapa-ciudad').setView([-41.2711,173.2837], 12);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',{attribution:'&copy; OSM &copy; CARTO',subdomains:'abcd',maxZoom:19}).addTo(map);L.marker([-41.2711,173.2837],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36]})}).addTo(map);
+L.circle([-41.2711,173.2837],{radius:3000,color:'#171717',fillColor:'#404040',fillOpacity:0.18,weight:2}).addTo(map).bindPopup('Coverage area — Nelson');
+</script></section></main></div></div><footer style="background:linear-gradient(135deg,#0A0A0A,#40404022);color:#FFF;padding:3rem 1.5rem"><div style="max-width:720px;margin:0 auto;text-align:center"><h3 style="font-size:1.4rem;margin:0 0 .5rem;color:#FFF">Ready for your project?</h3><p style="margin:0 0 1.5rem;color:rgba(255,255,255,.8)">Nelson, New Zealand</p><a href="mailto:contact@geotechnical-engineering1.co" style="display:inline-block;background:#404040;color:#FFF !important;padding:.9rem 2.2rem;border-radius:8px;text-decoration:none;font-weight:700;font-size:1rem;box-shadow:0 4px 14px rgba(0,0,0,.25)">Request a quote — contact@geotechnical-engineering1.co</a><p style="margin:1.8rem 0 0;font-size:.82rem;color:rgba(255,255,255,.5)">© 2026 Geotechnical Engineering1 · All rights reserved</p></div><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>References:</strong><a href="https://www.standards.govt.nz/" rel="nofollow noopener" target="_blank">Standards New Zealand</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Geotechnical</a></div><div class="updated-info" data-updated="2026-05-15" style="text-align:center;font-size:.85rem;opacity:.7;padding:.5rem 0">Last updated: 2026-05-15</div></footer><script>
 // Sidebar cat-toggle: click expande/contrae cat-sub (REGLA 30b)
 document.addEventListener('click', function(e) {
-    var btn = e.target.closest('.cat-toggle');
-    if (!btn) return;
-    e.preventDefault();
-    var item = btn.closest('.cat-item');
-    if (!item) return;
-    var sub = item.querySelector('.cat-sub');
-    if (!sub) return;
-    var open = btn.getAttribute('aria-expanded') === 'true';
-    btn.setAttribute('aria-expanded', open ? 'false' : 'true');
-    if (open) {
-        sub.setAttribute('hidden', '');
-    } else {
-        sub.removeAttribute('hidden');
-    }
+var btn = e.target.closest('.cat-toggle');
+if (!btn) return;
+e.preventDefault();
+var item = btn.closest('.cat-item');
+if (!item) return;
+var sub = item.querySelector('.cat-sub');
+if (!sub) return;
+var open = btn.getAttribute('aria-expanded') === 'true';
+btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+if (open) {
+sub.setAttribute('hidden', '');
+} else {
+sub.removeAttribute('hidden');
+}
 });
-</script>
-</body>
-</html>
+</script></body></html>
